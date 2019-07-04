@@ -18,7 +18,7 @@ package codility.lessons.lesson1_iterations;
  * N is an integer within the range [1..2,147,483,647].
  */
 
-class Solution {
+class BinaryGapSolution {
     int solution(int N) {
 
         // Data Validation. 5 미만의 경우 무조건 길이가 0임
@@ -63,7 +63,7 @@ class Solution {
 
 public class BinaryGap {
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        BinaryGapSolution solution = new BinaryGapSolution();
         solution.solution(2);
     }
 }
