@@ -48,9 +48,6 @@ class SysclickRotationSolution {
         // 회전하지 않는 경우 그대로 리턴
         if (K == 0) return A;
 
-        // K가 1이 아니면서 나누어 떨어지는 경우 그대로 리턴
-        if ((K != 1) && (A.length % K == 0)) return A;
-
         // 배열 길이보다 많은 횟수 회전하는 경우 그 차이만큼만 로테이션
         if (A.length < K)
             K %= A.length;
