@@ -28,8 +28,8 @@ import java.util.Arrays;
  * each element of array A is an integer within the range [1..(N + 1)].
  */
 
-class PermMissingElemSolution {
-    int solution(int[] A) {
+public class PermMissingElem {
+    public int solution(int[] A) {
         // 빈 배열인 경우 무조건 1 리턴
         if (A.length == 0) return 1;
 
@@ -46,16 +46,3 @@ class PermMissingElemSolution {
         return A[A.length - 1] + 1;
     }
 }
-
-public class PermMissingElem {
-    public static void main(String[] args) {
-        PermMissingElemSolution solution = new PermMissingElemSolution();
-        int[] arr = new int[4];
-        arr[0] = 1;
-        arr[1] = 2;
-        arr[2] = 3;
-        arr[3] = 5;
-        solution.solution(arr);
-    }
-}
-

@@ -54,7 +54,7 @@ package codility.lessons.lesson4_countingelements;
  * each element of array A is an integer within the range [1..N + 1].
  */
 
-class MaxCountersSolution {
+public class MaxCounters {
     // 1 <= X <= N 이 되는 A[K] = X이면, 연산 K는 증가(x)
     // A[K] = N + 1이면 연산 K는 최대 카운터
 
@@ -109,15 +109,5 @@ class MaxCountersSolution {
 
 
         return result;
-    }
-}
-
-public class MaxCounters {
-    public static void main(String[] args) {
-        MaxCountersSolution solution = new MaxCountersSolution();
-        int[] arr = new int[3];
-        arr[1] = 1;
-        arr[2] = 2;
-        solution.solution(3, arr);
     }
 }

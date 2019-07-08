@@ -41,7 +41,7 @@ package codility.lessons.lesson5_prefixsums;
  * each element of array A is an integer that can have one of the following values: 0, 1.
  */
 
-class PassingCarsSolution {
+public class PassingCars {
     // 1 <= A.length <= N
     // 1 <= N <= 100000
     // A의 연속요소 : 도로상의 연속적인 자동차
@@ -55,7 +55,7 @@ class PassingCarsSolution {
     //  A [3] = 1
     //  A [4] = 1
     //  5 리턴
-    int solution(int[] A) {
+    public int solution(int[] A) {
         int count = 0;
         int rightCount = 0;
 
@@ -80,19 +80,3 @@ class PassingCarsSolution {
         return count;
     }
 }
-
-public class PassingCars {
-    public static void main(String[] args) {
-        PassingCarsSolution solution = new PassingCarsSolution();
-
-        int[] arr = new int[5];
-        arr[0] = 0;
-        arr[1] = 1;
-        arr[2] = 0;
-        arr[3] = 1;
-        arr[4] = 1;
-
-        solution.solution(arr);
-    }
-}
-
