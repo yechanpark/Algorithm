@@ -1,4 +1,4 @@
-package codility.lessons.lesson5_passingcars;
+package codility.lessons.lesson5_prefixsums;
 
 /**
  * A non-empty array A consisting of N integers is given. The consecutive elements of array A represent consecutive cars on a road.
@@ -49,16 +49,35 @@ class PassingCarsSolution {
     // 0 : 동쪽으로 주행하는 차
     // 1 : 서쪽으로 주행하는 차
     // P 동쪽, Q 서쪽 여행 중 0 <= P < Q < N 인 한상의 자동차 (P, Q)가 지나감.
-    //  A [0] = 0
+    //  A [0] = 0  -> 3개
     //  A [1] = 1
-    //  A [2] = 0
+    //  A [2] = 0  -> 2개
     //  A [3] = 1
     //  A [4] = 1
-    //  (0, 1), (0, 3), (0, 4), (2, 3), (2, 4)이므로 5 리턴
+    //  5 리턴
     int solution(int[] A) {
+        int count = 0;
+        int rightCount = 0;
 
-        // 1,000,000,000가 초과하는 경우 -1 반환
-        return 1;
+        // 배열의 처음이 아닌 끝부터 순회
+        for (int i = A.length - 1; i >= 0; i--) {
+            // 1인 경우 1의 갯수 추가
+            if (A[i] == 1) {
+                rightCount++;
+            }
+
+            // 0이 나오면 그동안 나온 rightCount의 갯수를 count에 추가
+            if (A[i] == 0) {
+                count += rightCount;
+
+                // 카운트가 1000000000이 초과하는 경우 -1 반환
+                if (count > 1000000000)
+                    return -1;
+            }
+
+        }
+
+        return count;
     }
 }
 
@@ -66,10 +85,12 @@ public class PassingCars {
     public static void main(String[] args) {
         PassingCarsSolution solution = new PassingCarsSolution();
 
-        int[] arr = new int[3];
-        arr[0] = 1;
-        arr[1] = 2;
-        arr[2] = 3;
+        int[] arr = new int[5];
+        arr[0] = 0;
+        arr[1] = 1;
+        arr[2] = 0;
+        arr[3] = 1;
+        arr[4] = 1;
 
         solution.solution(arr);
     }
