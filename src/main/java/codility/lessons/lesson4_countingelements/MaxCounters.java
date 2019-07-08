@@ -65,7 +65,7 @@ public class MaxCounters {
     // A[4]=1 => K=4, X=1 => 1<=X(1)<=N(5) 이므로 연산 4는 증가(1) => 3,2,2,2,2
     // A[5]=4 => K=5, X=4 => 1<=X(4)<=N(5) 이므로 연산 5는 증가(4) => 3,2,2,3,2
     // A[6]=4 => K=6, X=4 => 1<=X(4)<=N(5) 이므로 연산 6은 증가(4) => 3,2,2,4,2
-    int[] solution(int N, int[] A) {
+    public int[] solution(int N, int[] A) {
 
         int[] result = new int[N];
 
