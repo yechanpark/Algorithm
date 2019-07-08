@@ -48,7 +48,7 @@ import java.util.Map;
  * each element of array A is an integer within the range [1..X].
  */
 
-class FrogRiverOneSolution {
+public class FrogRiverOne {
     // 개구리 처음 위치 : 0
     // 목적지 : X + 1
     // A : 떨어지는 나뭇잎을 나타내는 N개의 정수로 구성
@@ -56,7 +56,7 @@ class FrogRiverOneSolution {
     // A[0] : 처음 떨어진 잎의 위치
     // A[1] : 1초 후 떨어진 잎 위치
     // 1 <= N, X <= 100000
-    int solution(int X, int[] A) {
+    public int solution(int X, int[] A) {
         int result = -1;
 
         if (X > A.length)
@@ -88,17 +88,3 @@ class FrogRiverOneSolution {
         return result;
     }
 }
-
-public class FrogRiverOne {
-    public static void main(String[] args) {
-        FrogRiverOneSolution solution = new FrogRiverOneSolution();
-
-        int[] arr = new int[3];
-        arr[0] = 1;
-        arr[1] = 2;
-        arr[2] = 3;
-
-        solution.solution(3, arr);
-    }
-}
-

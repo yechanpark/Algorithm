@@ -25,11 +25,11 @@ import java.util.Map;
  * each element of array A is an integer within the range [−1,000,000..1,000,000].
  */
 
-class MissingIntegerSolution {
+public class MissingInteger {
     // A에 존재하지 않는 양의 정수 중 가장 작은 것을 반환
     // 1 < A.length == N <= 100000
     // -1000000 < A요소 < 1000000
-    int solution(int[] A) {
+    public int solution(int[] A) {
         // 오름차순 정렬
         Arrays.sort(A);
 
@@ -54,16 +54,3 @@ class MissingIntegerSolution {
         return 1;
     }
 }
-
-public class MissingInteger {
-    public static void main(String[] args) {
-        MissingIntegerSolution solution = new MissingIntegerSolution();
-
-        int[] arr = new int[3];
-        arr[0] = 1;
-        arr[1] = 2;
-        arr[2] = 3;
-        solution.solution(arr);
-    }
-}
-

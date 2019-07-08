@@ -1,0 +1,24 @@
+package test.lessons.lesson3_timecomplexity;
+
+import codility.lessons.lesson3_timecomplexity.TapeEquilibrium;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import static org.testng.Assert.assertEquals;
+
+public class TapeEquilibriumTest {
+    private TapeEquilibrium tapeEquilibrium;
+
+    @BeforeClass
+    public void init() {
+        this.tapeEquilibrium = new TapeEquilibrium();
+    }
+
+    @Test
+    public void sample1Test() {
+        int[] arr = {3, 1, 2, 4, 3};
+        int got = tapeEquilibrium.solution(arr);
+        int answer = 1;
+        assertEquals(got, answer);
+    }
+}
