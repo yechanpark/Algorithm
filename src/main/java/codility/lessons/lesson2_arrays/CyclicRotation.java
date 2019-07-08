@@ -39,8 +39,8 @@ package codility.lessons.lesson2_arrays;
  * In your solution, focus on correctness. The performance of your solution will not be the focus of the assessment.
  */
 
-class SysclickRotationSolution {
-    int[] solution(int[] A, int K) {
+public class CyclicRotation {
+    public int[] solution(int[] A, int K) {
 
         // 배열 길이가 1 이하인 경우 그대로 리턴
         if (A.length <= 1) return A;
@@ -71,14 +71,3 @@ class SysclickRotationSolution {
         return A;
     }
 }
-
-public class CyclicRotation {
-    public static void main(String[] args) {
-        SysclickRotationSolution solution = new SysclickRotationSolution();
-        int[] arr = new int[5];
-        arr[0] = 5;
-        arr[1] = -1000;
-        solution.solution(arr, 1);
-    }
-}
-

@@ -27,12 +27,12 @@ package codility.lessons.lesson3_timecomplexity;
  * X ≤ Y.
  */
 
-class FrogJmpSolution {
+public class FrogJmp {
     // X : 현재 위치 (1 이상)
     // Y : 가고 싶은 위치 (X보다 같거나 큼, 1 이상)
     // D : 고정된 이동거리 (1 이상)
     // return : 가장 적은 이동 횟수
-    int solution(int X, int Y, int D) {
+    public int solution(int X, int Y, int D) {
 
         // 가고싶은 위치 - 현재위치 = 이동해야 하는 거리
         int remainDistance = Y - X;
@@ -48,11 +48,3 @@ class FrogJmpSolution {
         return move;
     }
 }
-
-public class FrogJmp {
-    public static void main(String[] args) {
-        FrogJmpSolution solution = new FrogJmpSolution();
-        solution.solution(1, 2, 3);
-    }
-}
-
