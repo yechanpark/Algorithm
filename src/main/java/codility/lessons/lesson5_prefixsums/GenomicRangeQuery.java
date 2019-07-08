@@ -1,5 +1,8 @@
 package codility.lessons.lesson5_prefixsums;
 
+import java.util.Arrays;
+import java.util.stream.IntStream;
+
 /**
  * A DNA sequence can be represented as a string consisting of the letters A, C, G and T, which correspond to the types of successive nucleotides in the sequence. Each nucleotide has an impact factor, which is an integer. Nucleotides of types A, C, G and T have impact factors of 1, 2, 3 and 4, respectively. You are going to answer several queries of the form: What is the minimal impact factor of nucleotides contained in a particular part of the given DNA sequence?
  * <p>
@@ -41,7 +44,59 @@ package codility.lessons.lesson5_prefixsums;
 
 public class GenomicRangeQuery {
     public int[] solution(String S, int[] P, int[] Q) {
-        int[] result = {2,4,1};
+        int M = P.length; // 쿼리 갯수
+        int[] result = new int[M];
+
+        // String to char[]
+        char[] charArrayString = S.toCharArray();
+
+        // char[] to int[]
+        int[] intArray = new int[charArrayString.length];
+        for (int i = 0; i < charArrayString.length; i++)
+            intArray[i] = extract(charArrayString[i]);
+
+        // 쿼리 갯수만큼 돌림
+        for (int i = 0; i < M; i++) {
+            int pIndex = P[i];
+            int qIndex = Q[i];
+
+            // 같은 인덱스인 경우 해당 인덱스 바로 리턴
+            int tempSize = qIndex - pIndex + 1;
+            if (tempSize == 1) {
+                result[i] = intArray[qIndex];
+                continue;
+            }
+
+            // 다른 인덱스인 경우
+            int[] temp = new int[tempSize];
+
+            // 해당 부분을 intArray에서 temp로 복사
+            System.arraycopy(intArray, pIndex, temp, 0, tempSize);
+
+            // 중복값 제거
+            temp = IntStream.of(temp).distinct().toArray();
+
+            // 오름차순 정렬
+            Arrays.sort(temp);
+
+            result[i] = temp[0];
+
+        }
+
         return result;
+    }
+
+    private int extract(char c) {
+        switch (c) {
+            case 'A':
+                return 1;
+            case 'C':
+                return 2;
+            case 'G':
+                return 3;
+            case 'T':
+                return 4;
+        }
+        return 0;
     }
 }
