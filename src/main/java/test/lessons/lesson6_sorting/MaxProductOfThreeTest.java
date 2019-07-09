@@ -21,4 +21,12 @@ public class MaxProductOfThreeTest {
         int answer = 60;
         assertEquals(got, answer);
     }
+
+    @Test
+    public void sample2Test() {
+        int[] arr = {-5, -6, -4, -7, -10};
+        int got = maxProductOfThree.solution(arr);
+        int answer = -120;
+        assertEquals(got, answer);
+    }
 }
