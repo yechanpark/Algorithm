@@ -1,0 +1,24 @@
+package test.lessons.lesson2_arrays;
+
+import codility.lessons.lesson2_arrays.OddOccurrencesInArray;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import static org.testng.Assert.assertEquals;
+
+public class OddOccurrencesInArrayTest {
+    private OddOccurrencesInArray oddOccurrencesInArray;
+
+    @BeforeClass
+    public void init() {
+        this.oddOccurrencesInArray = new OddOccurrencesInArray();
+    }
+
+    @Test
+    public void sampleTest() {
+        int[] arr = {9, 3, 9, 3, 9, 7, 9};
+        int got = oddOccurrencesInArray.solution(arr);
+        int answer = 7;
+        assertEquals(got, answer);
+    }
+}

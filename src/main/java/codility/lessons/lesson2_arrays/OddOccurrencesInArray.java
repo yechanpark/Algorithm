@@ -35,8 +35,8 @@ import java.util.Map;
  * all but one of the values in A occur an even number of times.
  */
 
-class OddOccurrencesInArraySolution {
-    int solution(int[] A) {
+public class OddOccurrencesInArray {
+    public int solution(int[] A) {
 
         // 나온 숫자를 저장하기 위해 맵을 사용
         Map<Integer, Integer> map = new HashMap<Integer, Integer>();
@@ -64,19 +64,6 @@ class OddOccurrencesInArraySolution {
         }
 
         return answer;
-    }
-}
-
-public class OddOccurrencesInArray {
-    public static void main(String[] args) {
-        OddOccurrencesInArraySolution solution = new OddOccurrencesInArraySolution();
-        int[] arr = new int[5];
-        arr[0] = 1;
-        arr[1] = 2;
-        arr[2] = 1;
-        arr[3] = 2;
-        arr[4] = 3;
-        solution.solution(arr);
     }
 }
 

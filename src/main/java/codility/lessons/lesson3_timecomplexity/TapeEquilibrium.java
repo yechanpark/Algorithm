@@ -43,10 +43,10 @@ package codility.lessons.lesson3_timecomplexity;
  * each element of array A is an integer within the range [−1,000..1,000].
  */
 
-class TapeEquilibriumSolution {
+public class TapeEquilibrium {
     // 2 <= A.length
     // -1000 <= A요소 <= 1000
-    int solution(int[] A) {
+    public int solution(int[] A) {
         int rightSum = 0;
         int leftSum = 0;
         int result = Integer.MAX_VALUE;
@@ -81,17 +81,3 @@ class TapeEquilibriumSolution {
 
     }
 }
-
-public class TapeEquilibrium {
-    public static void main(String[] args) {
-        TapeEquilibriumSolution solution = new TapeEquilibriumSolution();
-        int[] arr = new int[5];
-        arr[0] = 3;
-        arr[1] = 1;
-        arr[2] = 2;
-        arr[3] = 4;
-        arr[4] = 3;
-        solution.solution(arr);
-    }
-}
-

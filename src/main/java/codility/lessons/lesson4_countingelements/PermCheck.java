@@ -49,10 +49,10 @@ import java.util.Arrays;
  * each element of array A is an integer within the range [1..1,000,000,000].
  */
 
-class PermCheckSolution {
+public class PermCheck {
     // A.length > 0
     // A.lengh가 4인경우 1~4가 들어있어야 함 (순서 무관)
-    int solution(int[] A) {
+    public int solution(int[] A) {
 
         Arrays.sort(A);
 
@@ -67,16 +67,3 @@ class PermCheckSolution {
         return 1;
     }
 }
-
-public class PermCheck {
-    public static void main(String[] args) {
-        PermCheckSolution solution = new PermCheckSolution();
-
-        int[] arr = new int[3];
-        arr[0] = 1;
-        arr[1] = 2;
-        arr[2] = 3;
-        solution.solution(arr);
-    }
-}
-
