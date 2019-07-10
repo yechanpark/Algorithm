@@ -1,5 +1,7 @@
 package codility.lessons.lesson7_stacksandqueues;
 
+import java.util.Stack;
+
 /**
  * A string S consisting of N characters is called properly nested if:
  * <p>
@@ -24,6 +26,35 @@ package codility.lessons.lesson7_stacksandqueues;
 
 public class Nesting {
     public int solution(String S) {
-        return 1;
+
+        Stack<Character> characterStack = new Stack<>();
+
+        for (char c : S.toCharArray()) {
+
+            // 비어있는 경우
+            if (characterStack.empty()) {
+                characterStack.push(c);
+            }
+
+            // 비어있지 않으면서 c값이 ')' 문자인 경우 스택에서 1개를 가져왔을 때 반드시 개행문자( '(' ) 여야 함
+            // 개행문자가 아닌 경우 포맷에 맞지 않음
+            else if (c == ')') {
+                if (characterStack.pop() != '(')
+                    return 0;
+            }
+
+            // 비어있지 않으면서 c값이 '('문자인 경우는 push
+            else {
+                characterStack.push(c);
+            }
+        }
+
+        // 스택이 비어있어야 모든 짝이 맞음
+        if (characterStack.empty())
+            return 1;
+
+            // 스택이 남아있으면 짝이 맞지 않음
+        else
+            return 0;
     }
 }

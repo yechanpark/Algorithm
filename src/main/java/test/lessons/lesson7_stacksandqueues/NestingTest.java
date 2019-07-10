@@ -16,7 +16,7 @@ public class NestingTest {
 
     @Test
     public void sample1Test() {
-        String s = "{[()()]}";
+        String s = "(()(())())";
         int got = nesting.solution(s);
         int answer = 1;
         assertEquals(got, answer);
@@ -24,7 +24,7 @@ public class NestingTest {
 
     @Test
     public void sample2Test() {
-        String s = "([)()]";
+        String s = "())";
         int got = nesting.solution(s);
         int answer = 0;
         assertEquals(got, answer);
