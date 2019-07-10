@@ -30,4 +30,30 @@ public class TriangleTest {
         assertEquals(got, answer);
     }
 
+    @Test
+    public void sample3Test() {
+        int[] arr = {};
+        int got = triangle.solution(arr);
+        int answer = 0;
+        assertEquals(got, answer);
+    }
+
+    @Test
+    public void sample4Test() {
+        int[] arr = {0};
+        int got = triangle.solution(arr);
+        int answer = 0;
+        assertEquals(got, answer);
+    }
+
+    @Test
+    public void sample5Test() {
+        int[] arr = {5, 3, 3};
+        int got = triangle.solution(arr);
+        int answer = 1;
+        assertEquals(got, answer);
+    }
+
+
+
 }
