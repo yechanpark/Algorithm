@@ -16,7 +16,7 @@ import java.util.*;
  * A[4] = 4
  * A[5] = 0
  * <p>
- * [NumberOfDiscIntersectionsImage.png]
+ * <img src='NumberOfDiscIntersectionsImage.png'></img>
  * <p>
  * There are eleven (unordered) pairs of discs that intersect, namely:
  * <p>
