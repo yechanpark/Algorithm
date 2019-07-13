@@ -71,3 +71,10 @@ public class CyclicRotation {
         return A;
     }
 }
+
+/**
+ * 키워드 - 회전
+ * 키워드 - 로테이션, 로테이트, Rotation, Rotate
+ * 키워드 - 오른쪽으로 이동
+ * 키워드 - 왼쪽으로 이동
+ * */

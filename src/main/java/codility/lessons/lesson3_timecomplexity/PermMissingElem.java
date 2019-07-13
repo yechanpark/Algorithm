@@ -46,3 +46,7 @@ public class PermMissingElem {
         return A[A.length - 1] + 1;
     }
 }
+
+/**
+ * 키워드 - 정렬, sorting, Arrays.sort(), 오름차순
+ * */

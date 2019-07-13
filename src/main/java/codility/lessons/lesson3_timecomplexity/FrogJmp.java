@@ -48,3 +48,7 @@ public class FrogJmp {
         return move;
     }
 }
+
+/**
+ * 키워드 - 초과, 이동, 이동거리
+ */

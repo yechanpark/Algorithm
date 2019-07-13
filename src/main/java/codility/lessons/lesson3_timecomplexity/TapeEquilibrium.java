@@ -81,3 +81,7 @@ public class TapeEquilibrium {
 
     }
 }
+
+/**
+ * 키워드 - 배열요소 이동, 절대값, Math.abs()
+ * */

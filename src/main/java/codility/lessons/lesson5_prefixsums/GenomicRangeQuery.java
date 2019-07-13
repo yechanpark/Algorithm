@@ -100,3 +100,9 @@ public class GenomicRangeQuery {
         return 0;
     }
 }
+
+/**
+ * 키워드 - 문자열 캐릭터 배열 변환
+ * 키워드 - String.toCharArray()
+ * 키워드 - 중복제거, IntStream.of(arr).distinct().toArray()
+ * */

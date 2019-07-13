@@ -88,3 +88,6 @@ public class FrogRiverOne {
         return result;
     }
 }
+/**
+ * 키워드 - 맵, 남은 요소 제거
+ * */

@@ -48,3 +48,8 @@ public class CountFactors {
         return count;
     }
 }
+
+/**
+ * 키워드 - 제곱근, Math.sqrt()
+ * 키워드 - 약수
+ * */
