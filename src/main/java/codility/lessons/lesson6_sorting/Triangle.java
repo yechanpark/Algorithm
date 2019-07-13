@@ -34,6 +34,8 @@ import java.util.Arrays;
  * <p>
  * N is an integer within the range [0..100,000];
  * each element of array A is an integer within the range [−2,147,483,648..2,147,483,647].
+ *
+ * @see <a href="https://reddeco.tistory.com/entry/Triangle">참고</a>
  */
 
 public class Triangle {
@@ -46,49 +48,19 @@ public class Triangle {
     //    A [R] + A [P]> A [Q]
     public int solution(int[] A) {
 
-        int count = 0;
-
-        if (A.length < 3)
-            return count;
-
-        // 오름차순 정렬
+        // 배열이 정렬된 상태라면(P < Q < R) 3가지 조건 중 다음 2가지는 항상 만족
+        // Q + R > P
+        // P + R > Q
+        // 따라서 P + Q > R 인지만 확인하면 된다.
         Arrays.sort(A);
 
-        // (2, 3, 4) 가 최소 트라이앵글
-        // 가장 큰 값이 4 이상일 때 루프
-        for (
-                int R = A.length-1;
-                (R >= 2) && (A[R] >= 4);
-                R--) {
-
-
-
-            // 중간값이 3 이상일 때 루프
-            // A[R]은 무조건 A[Q]보다 커야 함
-            // 중간값은 A[R]/2 보다 커야 함
-            for (
-                    int Q = R-1;
-                    (Q >= 1) && (A[Q] >= 3) && (A[Q] > (A[R]/2));
-                    Q--
-            ) {
-
-
-
-                // 작은 값이 2 이상일 때 루프
-                // A[Q]는 무조건 A[P]보다 커야 함
-                // 최소값은 A[R] - A[Q] +1 이상이어야 함
-                for (
-                        int P = Q-1;
-                        (P >= 0) && (A[P] >= 2) && (A[P] >= (A[R] - A[Q] +1));
-                        P--) {
-
-                    count++;
-
-
-                }
+        for (int i = 2; i < A.length; i++) {
+            if ((double)A[i-2] + (double)A[i-1] > A[i]) {
+                return 1;
             }
         }
-        return count;
+
+        return 0;
 
     }
 }
