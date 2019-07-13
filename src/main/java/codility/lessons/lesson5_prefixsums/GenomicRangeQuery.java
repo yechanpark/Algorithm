@@ -40,69 +40,55 @@ import java.util.stream.IntStream;
  * each element of arrays P, Q is an integer within the range [0..N − 1];
  * P[K] ≤ Q[K], where 0 ≤ K < M;
  * string S consists only of upper-case English letters A, C, G, T.
+ *
+ * @see <a href="https://reddeco.tistory.com/entry/GenomicRangeQuery">참고</a>
  */
-
 public class GenomicRangeQuery {
     public int[] solution(String S, int[] P, int[] Q) {
-        int M = P.length; // 쿼리 갯수
-        int[] result = new int[M];
 
-        // String to char[]
-        char[] charArrayString = S.toCharArray();
+        char[] charArr = S.toCharArray();
 
-        // char[] to int[]
-        int[] intArray = new int[charArrayString.length];
-        for (int i = 0; i < charArrayString.length; i++)
-            intArray[i] = extract(charArrayString[i]);
+        int[] impactCount = new int[4];
+        int[][] impactArray = new int[4][charArr.length + 1];
 
-        // 쿼리 갯수만큼 돌림
-        for (int i = 0; i < M; i++) {
-            int pIndex = P[i];
-            int qIndex = Q[i];
+        for (int i = 0; i < charArr.length; i++) {
+            int factor = convert(charArr[i]);
+            impactCount[factor - 1]++;
 
-            // 같은 인덱스인 경우 해당 인덱스 바로 리턴
-            int tempSize = qIndex - pIndex + 1;
-            if (tempSize == 1) {
-                result[i] = intArray[qIndex];
-                continue;
+            for (int j = 0; j < 4; j++) {
+                impactArray[j][i + 1] = impactCount[j];
             }
+        }
 
-            // 다른 인덱스인 경우
-            int[] temp = new int[tempSize];
+        // S = CAGCCTA
+        // impactCount = {2, 3, 1, 1} // = {A, C, G, T}
+        //                    padding   C A G C C T A
+        // impactArray[0] = {    0,     0,1,1,1,1,1,2} // = [A]
+        // impactArray[1] = {    0,     1,1,1,2,3,3,3} // = [C]
+        // impactArray[2] = {    0,     0,0,1,1,1,1,1} // = [G]
+        // impactArray[3] = {    0,     0,0,0,0,0,1,1} // = [T]
 
-            // 해당 부분을 intArray에서 temp로 복사
-            System.arraycopy(intArray, pIndex, temp, 0, tempSize);
+        int[] result = new int[P.length];
 
-            // 중복값 제거
-            temp = IntStream.of(temp).distinct().toArray();
+        for (int i = 0; i < P.length; i++) {
+            int start = P[i] + 1;
+            int end = Q[i] + 1;
 
-            // 오름차순 정렬
-            Arrays.sort(temp);
-
-            result[i] = temp[0];
-
+            for (int j = 0; j < 4; j++) {
+                if (impactArray[j][end] - impactArray[j][start - 1] > 0) {
+                    result[i] = j + 1;
+                    break;
+                }
+            }
         }
 
         return result;
     }
 
-    private int extract(char c) {
-        switch (c) {
-            case 'A':
-                return 1;
-            case 'C':
-                return 2;
-            case 'G':
-                return 3;
-            case 'T':
-                return 4;
-        }
-        return 0;
+    int convert(char c) {
+        if (c == 'A') return 1;
+        else if (c == 'C') return 2;
+        else if (c == 'G') return 3;
+        else return 4; // T
     }
 }
-
-/**
- * 키워드 - 문자열 캐릭터 배열 변환
- * 키워드 - String.toCharArray()
- * 키워드 - 중복제거, IntStream.of(arr).distinct().toArray()
- * */
