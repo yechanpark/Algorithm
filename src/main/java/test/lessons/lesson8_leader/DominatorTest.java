@@ -32,4 +32,16 @@ public class DominatorTest {
         assertTrue(answer.contains(got));
     }
 
+    @Test
+    public void sample2Test() {
+        int[] arr = {2147483647};
+        int got = dominator.solution(arr);
+
+        List<Integer> answer = new ArrayList<>();
+        answer.add(0);
+
+        assertTrue(answer.contains(got));
+    }
+
+
 }
