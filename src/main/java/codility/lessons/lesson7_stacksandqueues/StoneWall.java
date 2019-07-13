@@ -1,5 +1,7 @@
 package codility.lessons.lesson7_stacksandqueues;
 
+import java.util.Stack;
+
 /**
  * You are going to build a stone wall. The wall should be straight and N meters long, and its thickness should be constant; however, it should have different heights in different places. The height of the wall is specified by an array H of N positive integers. H[I] is the height of the wall from I to I+1 meters to the right of its left end. In particular, H[0] is the height of the wall's left end and H[N−1] is the height of the wall's right end.
  * <p>
@@ -25,10 +27,24 @@ package codility.lessons.lesson7_stacksandqueues;
  * <p>
  * N is an integer within the range [1..100,000];
  * each element of array H is an integer within the range [1..1,000,000,000].
+ *
+ * @see <a href="https://jobjava00.github.io/algorithm/codility/lesson7/StoneWall/">참고</a>
  */
 
 public class StoneWall {
     public int solution(int[] H) {
-        return 1;
+        Stack<Integer> stack = new Stack<>();
+
+        int count = 0;
+        for (int i = 0; i < H.length; i++) {
+            while (!stack.isEmpty() && stack.peek() > H[i]) {
+                stack.pop();
+            }
+            if (stack.isEmpty() || stack.peek() < H[i]) {
+                stack.push(H[i]);
+                count++;
+            }
+        }
+        return count;
     }
 }
