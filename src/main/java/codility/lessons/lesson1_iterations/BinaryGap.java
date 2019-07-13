@@ -60,3 +60,9 @@ public class BinaryGap {
         return biggestLength;
     }
 }
+
+/**
+ * 키워드 - 이진수
+ * 키워드 - 숫자 -> 이진수 문자열 변환
+ * 키워드 - 사이의 갯수
+ * */

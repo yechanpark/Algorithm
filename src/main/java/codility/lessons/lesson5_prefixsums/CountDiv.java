@@ -26,3 +26,7 @@ public class CountDiv {
         return count;
     }
 }
+
+/**
+ * 키워드 - 범위 안에서 배수의 갯수 구하기
+ * */

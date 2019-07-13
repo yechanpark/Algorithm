@@ -55,3 +55,8 @@ public class Dominator {
         return -1;
     }
 }
+
+/**
+ * 키워드 - 맵, Map.merge()
+ * 키워드- 과반수(<= X,  < O)
+ * */

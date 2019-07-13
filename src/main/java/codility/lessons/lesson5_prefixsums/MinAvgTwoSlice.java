@@ -80,3 +80,7 @@ public class MinAvgTwoSlice {
         return minIndex;
     }
 }
+
+/**
+ * 키워드 - 배열 그룹, 배열 그룹 합, 배열 그룹 평균
+ * */
