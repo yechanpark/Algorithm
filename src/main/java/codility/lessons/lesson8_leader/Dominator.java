@@ -38,25 +38,52 @@ public class Dominator {
     // 0 <= A.length <= 100000
     // -2147483648 <= A요소 <= 2147483647
     public int solution(int[] A) {
+
+        // A.length가 0이면 구할 수 없기때문에 Dominator가 없다.
+        if (A.length == 0)
+            return -1;
+
+        // A.length가 1이면 무조건 0번 인덱스가 Dominator
+        if (A.length == 1)
+            return 0;
+
         Map<Integer, Integer> map = new HashMap<>();
 
-        // A배열의 길이가 음수든 짝수든, 과반수를 넘으려면 A.length/2 + 1을 해야함
+        // A배열의 요소가 음수든 짝수든, 과반수를 넘으려면 A.length/2 + 1을 해야함
         int dominatorCondition = (A.length / 2) + 1;
 
         // A를 순회하면서
         for (int i = 0; i < A.length; i++) {
             // map에 A[i]값을 키로 1씩 더함
             // 더한 후 리턴 값이 Dominator 조건에 부함되는 경우 (배열 A에서 과반수 이상 차지하는 경우) 해당 인덱스 리턴
-            if (map.merge(A[i], 1, Integer::sum) >= dominatorCondition)
+
+            /**
+             * Map.merge()를 쓰면 정확도는 100%가 나오지만, 내부적으로 추가적인 연산이 많아 속도가 느려 Performance 100%가 나오지 않음
+             *
+             * if (map.merge(A[i], 1, Integer::sum) >= dominatorCondition)
+             *   return i;
+             */
+            Integer number = map.get(A[i]);
+
+            // 숫자가 없으면 초기값을 넣음
+            if (number == null) {
+                map.put(A[i], 1);
+                continue;
+            }
+
+            if (++number >= dominatorCondition)
                 return i;
+
+            map.put(A[i], number);
+
         }
 
-        // Dominator가 없으면 -1 리턴
+        // 계산을 해도 Dominator가 없으면 -1 리턴
         return -1;
     }
 }
 
 /**
- * 키워드 - 맵, Map.merge()
+ * 키워드 - 맵, Map.merge(), Map.put(), Map.get()
  * 키워드- 과반수(<= X,  < O)
- * */
+ */
