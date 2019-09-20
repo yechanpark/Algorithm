@@ -18,9 +18,9 @@ public class LadderTest {
     public void sample1Test() {
         int[] A = {4, 4, 5, 5, 1};
         int[] B = {3, 2, 4, 3, 1};
-        int[] got = ladder.solution(A, B);
-        int[] answer = {5, 1, 8, 0, 1};
-        assertEquals(got, answer);
+        int[] actual = ladder.solution(A, B);
+        int[] expected = {5, 1, 8, 0, 1};
+        assertEquals(actual, expected);
     }
 
 }

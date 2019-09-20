@@ -17,24 +17,24 @@ public class MissingIntegerTest {
     @Test
     public void sample1Test() {
         int[] arr = {1, 3, 6, 4, 1, 2};
-        int got = missingInteger.solution(arr);
-        int answer = 5;
-        assertEquals(got, answer);
+        int actual = missingInteger.solution(arr);
+        int expected = 5;
+        assertEquals(actual, expected);
     }
 
     @Test
     public void sample2Test() {
         int[] arr = {1, 2, 3};
-        int got = missingInteger.solution(arr);
-        int answer = 4;
-        assertEquals(got, answer);
+        int actual = missingInteger.solution(arr);
+        int expected = 4;
+        assertEquals(actual, expected);
     }
 
     @Test
     public void sample3Test() {
         int[] arr = {-1, -3};
-        int got = missingInteger.solution(arr);
-        int answer = 1;
-        assertEquals(got, answer);
+        int actual = missingInteger.solution(arr);
+        int expected = 1;
+        assertEquals(actual, expected);
     }
 }

@@ -17,8 +17,8 @@ public class PermMissingElemTest {
     @Test
     public void sample1Test() {
         int[] arr = {2, 3, 1, 5};
-        int got = permMissingElem.solution(arr);
-        int answer = 4;
-        assertEquals(got, answer);
+        int actual = permMissingElem.solution(arr);
+        int expected = 4;
+        assertEquals(actual, expected);
     }
 }

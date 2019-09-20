@@ -18,18 +18,18 @@ public class ChocolatesByNumbersTest {
     public void sample1Test() {
         int N = 10;
         int M = 4;
-        int got = chocolatesByNumbers.solution(N, M);
-        int answer = 5;
-        assertEquals(got, answer);
+        int actual = chocolatesByNumbers.solution(N, M);
+        int expected = 5;
+        assertEquals(actual, expected);
     }
 
     @Test
     public void sample2Test() {
         int N = 1;
         int M = 2;
-        int got = chocolatesByNumbers.solution(N, M);
-        int answer = 1;
-        assertEquals(got, answer);
+        int actual = chocolatesByNumbers.solution(N, M);
+        int expected = 1;
+        assertEquals(actual, expected);
     }
 
 }

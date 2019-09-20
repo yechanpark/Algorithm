@@ -17,8 +17,8 @@ public class FrogRiverOneTest {
     @Test
     public void sample1Test() {
         int[] arr = {1, 3, 1, 4, 2, 3, 5, 4};
-        int got = frogRiverOne.solution(5, arr);
-        int answer = 6;
-        assertEquals(got, answer);
+        int actual = frogRiverOne.solution(5, arr);
+        int expected = 6;
+        assertEquals(actual, expected);
     }
 }

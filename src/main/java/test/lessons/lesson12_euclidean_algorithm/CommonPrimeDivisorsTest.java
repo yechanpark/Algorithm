@@ -18,9 +18,9 @@ public class CommonPrimeDivisorsTest {
     public void sample1Test() {
         int[] A = {15, 10, 9};
         int[] B = {75, 30, 5};
-        int got = commonPrimeDivisors.solution(A, B);
-        int answer = 1;
-        assertEquals(got, answer);
+        int actual = commonPrimeDivisors.solution(A, B);
+        int expected = 1;
+        assertEquals(actual, expected);
     }
 
 }

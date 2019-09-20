@@ -17,17 +17,17 @@ public class MinPerimeterRectangleTest {
     @Test
     public void sample1Test() {
         int N = 30;
-        int got = minPerimeterRectangle.solution(N);
-        int answer = 22;
-        assertEquals(got, answer);
+        int actual = minPerimeterRectangle.solution(N);
+        int expected = 22;
+        assertEquals(actual, expected);
     }
 
     @Test
     public void sample2Test() {
         int N = 36;
-        int got = minPerimeterRectangle.solution(N);
-        int answer = 24;
-        assertEquals(got, answer);
+        int actual = minPerimeterRectangle.solution(N);
+        int expected = 24;
+        assertEquals(actual, expected);
     }
 
 }
