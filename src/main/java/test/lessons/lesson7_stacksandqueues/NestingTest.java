@@ -17,17 +17,17 @@ public class NestingTest {
     @Test
     public void sample1Test() {
         String s = "(()(())())";
-        int got = nesting.solution(s);
-        int answer = 1;
-        assertEquals(got, answer);
+        int actual = nesting.solution(s);
+        int expected = 1;
+        assertEquals(actual, expected);
     }
 
     @Test
     public void sample2Test() {
         String s = "())";
-        int got = nesting.solution(s);
-        int answer = 0;
-        assertEquals(got, answer);
+        int actual = nesting.solution(s);
+        int expected = 0;
+        assertEquals(actual, expected);
     }
 
 }

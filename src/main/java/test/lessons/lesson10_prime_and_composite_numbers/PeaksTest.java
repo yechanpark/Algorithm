@@ -17,9 +17,9 @@ public class PeaksTest {
     @Test
     public void sample1Test() {
         int[] A = {1, 2, 3, 4, 3, 4, 1, 2, 3, 4, 6, 2};
-        int got = peaks.solution(A);
-        int answer = 3;
-        assertEquals(got, answer);
+        int actual = peaks.solution(A);
+        int expected = 3;
+        assertEquals(actual, expected);
     }
 
 }

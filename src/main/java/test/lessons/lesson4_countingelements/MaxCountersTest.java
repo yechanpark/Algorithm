@@ -17,8 +17,8 @@ public class MaxCountersTest {
     @Test
     public void sample1Test() {
         int[] arr = {3, 4, 4, 6, 1, 4, 4};
-        int[] got = maxCounters.solution(5, arr);
-        int[] answer = {3, 2, 2, 4, 2};
-        assertEquals(got, answer);
+        int[] actual = maxCounters.solution(5, arr);
+        int[] expected = {3, 2, 2, 4, 2};
+        assertEquals(actual, expected);
     }
 }

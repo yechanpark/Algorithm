@@ -17,9 +17,9 @@ public class StoneWallTest {
     @Test
     public void sample1Test() {
         int[] arr = {8, 8, 5, 7, 9, 8, 7, 4, 8};
-        int got = stoneWall.solution(arr);
-        int answer = 7;
-        assertEquals(got, answer);
+        int actual = stoneWall.solution(arr);
+        int expected = 7;
+        assertEquals(actual, expected);
     }
 
 }

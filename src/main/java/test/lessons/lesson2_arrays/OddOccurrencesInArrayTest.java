@@ -17,8 +17,8 @@ public class OddOccurrencesInArrayTest {
     @Test
     public void sampleTest() {
         int[] arr = {9, 3, 9, 3, 9, 7, 9};
-        int got = oddOccurrencesInArray.solution(arr);
-        int answer = 7;
-        assertEquals(got, answer);
+        int actual = oddOccurrencesInArray.solution(arr);
+        int expected = 7;
+        assertEquals(actual, expected);
     }
 }

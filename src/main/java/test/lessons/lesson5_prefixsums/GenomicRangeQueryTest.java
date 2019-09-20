@@ -20,10 +20,10 @@ public class GenomicRangeQueryTest {
         int[] Q = {4, 5, 6};
         String S = "CAGCCTA";
 
-        int[] got = genomicRangeQuery.solution(S, P, Q);
-        int[] answer = {2, 4, 1};
+        int[] actual = genomicRangeQuery.solution(S, P, Q);
+        int[] expected = {2, 4, 1};
 
-        assertEquals(got, answer);
+        assertEquals(actual, expected);
     }
 
     @Test
@@ -32,10 +32,10 @@ public class GenomicRangeQueryTest {
         int[] Q = {4, 4, 4};
         String S = "CAGCCTA";
 
-        int[] got = genomicRangeQuery.solution(S, P, Q);
-        int[] answer = {2, 2, 2};
+        int[] actual = genomicRangeQuery.solution(S, P, Q);
+        int[] expected = {2, 2, 2};
 
-        assertEquals(got, answer);
+        assertEquals(actual, expected);
     }
 
     @Test
@@ -44,9 +44,9 @@ public class GenomicRangeQueryTest {
         int[] Q = {3, 5, 5};
         String S = "TGCATGCA";
 
-        int[] got = genomicRangeQuery.solution(S, P, Q);
-        int[] answer = {1, 1, 1};
+        int[] actual = genomicRangeQuery.solution(S, P, Q);
+        int[] expected = {1, 1, 1};
 
-        assertEquals(got, answer);
+        assertEquals(actual, expected);
     }
 }

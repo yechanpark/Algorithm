@@ -17,9 +17,9 @@ public class FibFrogTest {
     @Test
     public void sample1Test() {
         int[] A = {0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0};
-        int got = fibFrog.solution(A);
-        int answer = 3;
-        assertEquals(got, answer);
+        int actual = fibFrog.solution(A);
+        int expected = 3;
+        assertEquals(actual, expected);
     }
 
 }

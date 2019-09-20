@@ -17,9 +17,9 @@ public class NumberOfDiscIntersectionsTest {
     @Test
     public void sample1Test() {
         int[] arr = {1, 5, 2, 1, 4, 0};
-        int got = numberOfDiscIntersections.solution(arr);
-        int answer = 11;
-        assertEquals(got, answer);
+        int actual = numberOfDiscIntersections.solution(arr);
+        int expected = 11;
+        assertEquals(actual, expected);
     }
 
 }
