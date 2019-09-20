@@ -17,17 +17,17 @@ public class CountFactorsTest {
     @Test
     public void sample1Test() {
         int input = 24;
-        int got = countFactors.solution(input);
-        int answer = 8;
-        assertEquals(got, answer);
+        int actual = countFactors.solution(input);
+        int expected = 8;
+        assertEquals(actual, expected);
     }
 
     @Test
     public void sample2Test() {
         int input = 1;
-        int got = countFactors.solution(input);
-        int answer = 1;
-        assertEquals(got, answer);
+        int actual = countFactors.solution(input);
+        int expected = 1;
+        assertEquals(actual, expected);
     }
 
 }

@@ -17,8 +17,8 @@ public class PassingCarsTest {
     @Test
     public void sample1Test() {
         int[] arr = {0, 1, 0, 1, 1};
-        int got = passingCars.solution(arr);
-        int answer = 5;
-        assertEquals(got, answer);
+        int actual = passingCars.solution(arr);
+        int expected = 5;
+        assertEquals(actual, expected);
     }
 }

@@ -17,16 +17,16 @@ public class PermCheckTest {
     @Test
     public void sample1Test() {
         int[] arr = {4, 1, 3, 2};
-        int got = permCheck.solution(arr);
-        int answer = 1;
-        assertEquals(got, answer);
+        int actual = permCheck.solution(arr);
+        int expected = 1;
+        assertEquals(actual, expected);
     }
 
     @Test
     public void sample2Test() {
         int[] arr = {4, 1, 3};
-        int got = permCheck.solution(arr);
-        int answer = 0;
-        assertEquals(got, answer);
+        int actual = permCheck.solution(arr);
+        int expected = 0;
+        assertEquals(actual, expected);
     }
 }

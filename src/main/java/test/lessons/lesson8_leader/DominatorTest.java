@@ -20,27 +20,27 @@ public class DominatorTest {
     @Test
     public void sample1Test() {
         int[] arr = {3, 4, 3, 2, 3, -1, 3, 3};
-        int got = dominator.solution(arr);
+        int actual = dominator.solution(arr);
 
-        List<Integer> answer = new ArrayList<>();
-        answer.add(0);
-        answer.add(2);
-        answer.add(4);
-        answer.add(6);
-        answer.add(7);
+        List<Integer> expected = new ArrayList<>();
+        expected.add(0);
+        expected.add(2);
+        expected.add(4);
+        expected.add(6);
+        expected.add(7);
 
-        assertTrue(answer.contains(got));
+        assertTrue(expected.contains(actual));
     }
 
     @Test
     public void sample2Test() {
         int[] arr = {2147483647};
-        int got = dominator.solution(arr);
+        int actaul = dominator.solution(arr);
 
-        List<Integer> answer = new ArrayList<>();
-        answer.add(0);
+        List<Integer> expected = new ArrayList<>();
+        expected.add(0);
 
-        assertTrue(answer.contains(got));
+        assertTrue(expected.contains(actaul));
     }
 
 

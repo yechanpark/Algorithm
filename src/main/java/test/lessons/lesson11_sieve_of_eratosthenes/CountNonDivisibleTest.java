@@ -19,9 +19,9 @@ public class CountNonDivisibleTest {
         int N = 26;
         int[] P = {1, 4, 16};
         int[] Q = {26, 10, 20};
-        int[] got = countNonDivisible.solution(N, P, Q);
-        int[] answer = {10, 4, 0};
-        assertEquals(got, answer);
+        int[] actual = countNonDivisible.solution(N, P, Q);
+        int[] expected = {10, 4, 0};
+        assertEquals(actual, expected);
     }
 
 }

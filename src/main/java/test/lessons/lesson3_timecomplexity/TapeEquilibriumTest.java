@@ -17,8 +17,8 @@ public class TapeEquilibriumTest {
     @Test
     public void sample1Test() {
         int[] arr = {3, 1, 2, 4, 3};
-        int got = tapeEquilibrium.solution(arr);
-        int answer = 1;
-        assertEquals(got, answer);
+        int actual = tapeEquilibrium.solution(arr);
+        int expected = 1;
+        assertEquals(actual, expected);
     }
 }

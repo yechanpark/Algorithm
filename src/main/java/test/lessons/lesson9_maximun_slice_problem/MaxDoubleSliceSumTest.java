@@ -17,9 +17,9 @@ public class MaxDoubleSliceSumTest {
     @Test
     public void sample1Test() {
         int[] arr = {3, 2, 6, -1, 4, 5, -1, 2};
-        int got = maxDoubleSliceSum.solution(arr);
-        int answer = 17;
-        assertEquals(got, answer);
+        int actual = maxDoubleSliceSum.solution(arr);
+        int expected = 17;
+        assertEquals(actual, expected);
     }
 
 }

@@ -17,25 +17,25 @@ public class MaxProfitTest {
     @Test
     public void sample1Test() {
         int[] arr = {23171, 21011, 21123, 21366, 21013, 21367};
-        int got = maxProfit.solution(arr);
-        int answer = 356;
-        assertEquals(got, answer);
+        int actual = maxProfit.solution(arr);
+        int expected = 356;
+        assertEquals(actual, expected);
     }
 
     @Test
     public void sample2Test() {
         int[] arr = {5, 4, 3, 2, 1};
-        int got = maxProfit.solution(arr);
-        int answer = 0;
-        assertEquals(got, answer);
+        int actual = maxProfit.solution(arr);
+        int expected = 0;
+        assertEquals(actual, expected);
     }
 
     @Test
     public void sample3Test() {
         int[] arr = {8, 9, 3, 6, 1, 2};
-        int got = maxProfit.solution(arr);
-        int answer = 3;
-        assertEquals(got, answer);
+        int actual = maxProfit.solution(arr);
+        int expected = 3;
+        assertEquals(actual, expected);
     }
 
 }

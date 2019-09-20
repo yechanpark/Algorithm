@@ -17,25 +17,25 @@ public class MaxSliceSumTest {
     @Test
     public void sample1Test() {
         int[] arr = {3, 2, -6, 4, 0};
-        int got = maxSliceSum.solution(arr);
-        int answer = 5;
-        assertEquals(got, answer);
+        int actual = maxSliceSum.solution(arr);
+        int expected = 5;
+        assertEquals(actual, expected);
     }
 
     @Test
     public void sample2Test() {
         int[] arr = {1, 5, -1, 5, 1};
-        int got = maxSliceSum.solution(arr);
-        int answer = 11;
-        assertEquals(got, answer);
+        int actual = maxSliceSum.solution(arr);
+        int expected = 11;
+        assertEquals(actual, expected);
     }
 
     @Test
     public void sample3Test() {
         int[] arr = {-2, -2};
-        int got = maxSliceSum.solution(arr);
-        int answer = -2;
-        assertEquals(got, answer);
+        int actual = maxSliceSum.solution(arr);
+        int expected = -2;
+        assertEquals(actual, expected);
     }
 
 }

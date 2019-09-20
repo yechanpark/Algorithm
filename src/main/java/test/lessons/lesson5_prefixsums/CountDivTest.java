@@ -20,10 +20,10 @@ public class CountDivTest {
         int B = 11;
         int K = 2;
 
-        int got = countDiv.solution(A, B, K);
-        int answer = 3;
+        int actual = countDiv.solution(A, B, K);
+        int expected = 3;
 
-        assertEquals(got, answer);
+        assertEquals(actual, expected);
     }
 
 }

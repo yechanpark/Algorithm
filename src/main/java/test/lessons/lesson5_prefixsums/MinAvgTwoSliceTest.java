@@ -18,10 +18,10 @@ public class MinAvgTwoSliceTest {
     public void sample1Test() {
         int[] arr = {4, 2, 2, 5, 1, 5, 8};
 
-        int got = minAvgTwoSlice.solution(arr);
-        int answer = 1;
+        int actual = minAvgTwoSlice.solution(arr);
+        int expected = 1;
 
-        assertEquals(got, answer);
+        assertEquals(actual, expected);
     }
 
 }

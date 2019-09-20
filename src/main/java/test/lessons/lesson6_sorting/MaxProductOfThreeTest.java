@@ -17,16 +17,16 @@ public class MaxProductOfThreeTest {
     @Test
     public void sample1Test() {
         int[] arr = {-3, 1, 2, -2, 5, 6};
-        int got = maxProductOfThree.solution(arr);
-        int answer = 60;
-        assertEquals(got, answer);
+        int actual = maxProductOfThree.solution(arr);
+        int expected = 60;
+        assertEquals(actual, expected);
     }
 
     @Test
     public void sample2Test() {
         int[] arr = {-5, -6, -4, -7, -10};
-        int got = maxProductOfThree.solution(arr);
-        int answer = -120;
-        assertEquals(got, answer);
+        int actual = maxProductOfThree.solution(arr);
+        int expected = -120;
+        assertEquals(actual, expected);
     }
 }

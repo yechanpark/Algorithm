@@ -19,9 +19,9 @@ public class CountSemiprimesTest {
         int N = 26;
         int[] P = {1, 4, 16};
         int[] Q = {26, 10, 20};
-        int[] got = countSemiprimes.solution(N, P, Q);
-        int[] answer = {10, 4, 0};
-        assertEquals(got, answer);
+        int[] actual = countSemiprimes.solution(N, P, Q);
+        int[] expected = {10, 4, 0};
+        assertEquals(actual, expected);
     }
 
 }

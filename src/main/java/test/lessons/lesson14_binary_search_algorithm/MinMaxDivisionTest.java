@@ -19,9 +19,9 @@ public class MinMaxDivisionTest {
         int K = 3;
         int M = 5;
         int[] A = {2, 1, 5, 1, 2, 2, 2};
-        int got = minMaxDivision.solution(K, M, A);
-        int answer = 6;
-        assertEquals(got, answer);
+        int actual = minMaxDivision.solution(K, M, A);
+        int expected = 6;
+        assertEquals(actual, expected);
     }
 
 }

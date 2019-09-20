@@ -16,8 +16,8 @@ public class FrogJmpTest {
 
     @Test
     public void sample1Test() {
-        int got = frogJmp.solution(10, 85, 30);
-        int answer = 3;
-        assertEquals(got, answer);
+        int actual = frogJmp.solution(10, 85, 30);
+        int expected = 3;
+        assertEquals(actual, expected);
     }
 }
