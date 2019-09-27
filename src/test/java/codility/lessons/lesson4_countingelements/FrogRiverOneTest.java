@@ -18,6 +18,6 @@ public class FrogRiverOneTest {
         int[] arr = {1, 3, 1, 4, 2, 3, 5, 4};
         int actual = frogRiverOne.solution(5, arr);
         int expected = 6;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 }

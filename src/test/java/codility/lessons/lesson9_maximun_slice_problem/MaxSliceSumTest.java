@@ -19,7 +19,7 @@ public class MaxSliceSumTest {
         int[] arr = {3, 2, -6, 4, 0};
         int actual = maxSliceSum.solution(arr);
         int expected = 5;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -27,7 +27,7 @@ public class MaxSliceSumTest {
         int[] arr = {1, 5, -1, 5, 1};
         int actual = maxSliceSum.solution(arr);
         int expected = 11;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -35,7 +35,7 @@ public class MaxSliceSumTest {
         int[] arr = {-2, -2};
         int actual = maxSliceSum.solution(arr);
         int expected = -2;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
 }

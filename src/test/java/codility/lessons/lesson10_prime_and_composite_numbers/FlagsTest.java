@@ -18,7 +18,7 @@ public class FlagsTest {
         int[] A = {1, 5, 3, 4, 3, 4, 1, 2, 3, 4, 6, 2};
         int actual = flags.solution(A);
         int expected = 3;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
 }

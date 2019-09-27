@@ -20,7 +20,7 @@ public class CountSemiprimesTest {
         int[] Q = {26, 10, 20};
         int[] actual = countSemiprimes.solution(N, P, Q);
         int[] expected = {10, 4, 0};
-        assertArrayEquals(actual, expected);
+        assertArrayEquals(expected, actual);
     }
 
 }

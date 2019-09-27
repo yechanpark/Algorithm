@@ -19,7 +19,7 @@ public class MaxProfitTest {
         int[] arr = {23171, 21011, 21123, 21366, 21013, 21367};
         int actual = maxProfit.solution(arr);
         int expected = 356;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -27,7 +27,7 @@ public class MaxProfitTest {
         int[] arr = {5, 4, 3, 2, 1};
         int actual = maxProfit.solution(arr);
         int expected = 0;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -35,7 +35,7 @@ public class MaxProfitTest {
         int[] arr = {8, 9, 3, 6, 1, 2};
         int actual = maxProfit.solution(arr);
         int expected = 3;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
 }

@@ -20,7 +20,7 @@ public class MinMaxDivisionTest {
         int[] A = {2, 1, 5, 1, 2, 2, 2};
         int actual = minMaxDivision.solution(K, M, A);
         int expected = 6;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
 }

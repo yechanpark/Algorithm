@@ -18,6 +18,6 @@ public class PermMissingElemTest {
         int[] arr = {2, 3, 1, 5};
         int actual = permMissingElem.solution(arr);
         int expected = 4;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 }

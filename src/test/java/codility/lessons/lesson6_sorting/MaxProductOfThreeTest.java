@@ -18,7 +18,7 @@ public class MaxProductOfThreeTest {
         int[] arr = {-3, 1, 2, -2, 5, 6};
         int actual = maxProductOfThree.solution(arr);
         int expected = 60;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -26,6 +26,6 @@ public class MaxProductOfThreeTest {
         int[] arr = {-5, -6, -4, -7, -10};
         int actual = maxProductOfThree.solution(arr);
         int expected = -120;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 }

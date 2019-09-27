@@ -18,7 +18,7 @@ public class MissingIntegerTest {
         int[] arr = {1, 3, 6, 4, 1, 2};
         int actual = missingInteger.solution(arr);
         int expected = 5;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -26,7 +26,7 @@ public class MissingIntegerTest {
         int[] arr = {1, 2, 3};
         int actual = missingInteger.solution(arr);
         int expected = 4;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -34,6 +34,6 @@ public class MissingIntegerTest {
         int[] arr = {-1, -3};
         int actual = missingInteger.solution(arr);
         int expected = 1;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 }

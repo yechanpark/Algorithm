@@ -18,7 +18,7 @@ public class FibFrogTest {
         int[] A = {0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0};
         int actual = fibFrog.solution(A);
         int expected = 3;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
 }

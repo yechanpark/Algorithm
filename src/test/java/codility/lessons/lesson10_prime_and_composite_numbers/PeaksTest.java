@@ -18,7 +18,7 @@ public class PeaksTest {
         int[] A = {1, 2, 3, 4, 3, 4, 1, 2, 3, 4, 6, 2};
         int actual = peaks.solution(A);
         int expected = 3;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
 }

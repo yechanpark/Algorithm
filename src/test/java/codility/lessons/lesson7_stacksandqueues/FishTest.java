@@ -19,7 +19,7 @@ public class FishTest {
         int[] b = {0, 1, 0, 0, 0};
         int actual = fish.solution(a, b);
         int expected = 2;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
 }

@@ -18,7 +18,7 @@ public class PermCheckTest {
         int[] arr = {4, 1, 3, 2};
         int actual = permCheck.solution(arr);
         int expected = 1;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -26,6 +26,6 @@ public class PermCheckTest {
         int[] arr = {4, 1, 3};
         int actual = permCheck.solution(arr);
         int expected = 0;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 }

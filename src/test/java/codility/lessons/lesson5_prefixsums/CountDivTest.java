@@ -22,7 +22,7 @@ public class CountDivTest {
         int actual = countDiv.solution(A, B, K);
         int expected = 3;
 
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
 }

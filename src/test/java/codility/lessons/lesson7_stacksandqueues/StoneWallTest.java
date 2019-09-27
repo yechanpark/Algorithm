@@ -18,7 +18,7 @@ public class StoneWallTest {
         int[] arr = {8, 8, 5, 7, 9, 8, 7, 4, 8};
         int actual = stoneWall.solution(arr);
         int expected = 7;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
 }

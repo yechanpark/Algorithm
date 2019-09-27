@@ -18,7 +18,7 @@ public class BracketsTest {
         String s = "{[()()]}";
         int actual = brackets.solution(s);
         int expected = 1;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -26,7 +26,7 @@ public class BracketsTest {
         String s = "([)()]";
         int actual = brackets.solution(s);
         int expected = 0;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
 }

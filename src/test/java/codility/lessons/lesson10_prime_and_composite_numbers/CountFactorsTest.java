@@ -18,7 +18,7 @@ public class CountFactorsTest {
         int input = 24;
         int actual = countFactors.solution(input);
         int expected = 8;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -26,7 +26,7 @@ public class CountFactorsTest {
         int input = 1;
         int actual = countFactors.solution(input);
         int expected = 1;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
 }

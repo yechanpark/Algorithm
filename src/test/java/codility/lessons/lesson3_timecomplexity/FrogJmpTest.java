@@ -17,6 +17,6 @@ public class FrogJmpTest {
     public void sample1Test() {
         int actual = frogJmp.solution(10, 85, 30);
         int expected = 3;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 }

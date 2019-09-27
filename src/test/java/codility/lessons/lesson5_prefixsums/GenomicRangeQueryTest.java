@@ -22,7 +22,7 @@ public class GenomicRangeQueryTest {
         int[] actual = genomicRangeQuery.solution(S, P, Q);
         int[] expected = {2, 4, 1};
 
-        assertArrayEquals(actual, expected);
+        assertArrayEquals(expected, actual);
     }
 
     @Test
@@ -34,7 +34,7 @@ public class GenomicRangeQueryTest {
         int[] actual = genomicRangeQuery.solution(S, P, Q);
         int[] expected = {2, 2, 2};
 
-        assertArrayEquals(actual, expected);
+        assertArrayEquals(expected, actual);
     }
 
     @Test
@@ -46,6 +46,6 @@ public class GenomicRangeQueryTest {
         int[] actual = genomicRangeQuery.solution(S, P, Q);
         int[] expected = {1, 1, 1};
 
-        assertArrayEquals(actual, expected);
+        assertArrayEquals(expected, actual);
     }
 }

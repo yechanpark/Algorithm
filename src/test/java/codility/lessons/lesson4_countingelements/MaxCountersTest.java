@@ -18,6 +18,6 @@ public class MaxCountersTest {
         int[] arr = {3, 4, 4, 6, 1, 4, 4};
         int[] actual = maxCounters.solution(5, arr);
         int[] expected = {3, 2, 2, 4, 2};
-        assertArrayEquals(actual, expected);
+        assertArrayEquals(expected, actual);
     }
 }

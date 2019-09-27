@@ -17,20 +17,20 @@ public class BinaryGapTest {
     public void sample1Test() {
         int actual = binaryGap.solution(1041);
         int expected = 5;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @Test
     public void sample2Test() {
         int actual = binaryGap.solution(15);
         int expected = 0;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @Test
     public void sample3Test() {
         int actual = binaryGap.solution(32);
         int expected = 0;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 }

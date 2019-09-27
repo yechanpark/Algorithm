@@ -18,7 +18,7 @@ public class CountTrianglesTest {
         int[] A = {10, 2, 5, 1, 8, 12};
         int actual = countTriangles.solution(A);
         int expected = 4;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
 }

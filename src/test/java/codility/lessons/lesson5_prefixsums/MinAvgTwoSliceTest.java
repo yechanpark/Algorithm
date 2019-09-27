@@ -20,7 +20,7 @@ public class MinAvgTwoSliceTest {
         int actual = minAvgTwoSlice.solution(arr);
         int expected = 1;
 
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
 }

@@ -18,7 +18,7 @@ public class MinPerimeterRectangleTest {
         int N = 30;
         int actual = minPerimeterRectangle.solution(N);
         int expected = 22;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -26,7 +26,7 @@ public class MinPerimeterRectangleTest {
         int N = 36;
         int actual = minPerimeterRectangle.solution(N);
         int expected = 24;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
 }

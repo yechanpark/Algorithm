@@ -20,7 +20,7 @@ public class CountNonDivisibleTest {
         int[] Q = {26, 10, 20};
         int[] actual = countNonDivisible.solution(N, P, Q);
         int[] expected = {10, 4, 0};
-        assertArrayEquals(actual, expected);
+        assertArrayEquals(expected, actual);
     }
 
 }

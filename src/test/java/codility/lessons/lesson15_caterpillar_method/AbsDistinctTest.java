@@ -18,7 +18,7 @@ public class AbsDistinctTest {
         int[] A = {-5, -3, -1, 0, 3, 6};
         int actual = absDistinct.solution(A);
         int expected = 5;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -26,7 +26,7 @@ public class AbsDistinctTest {
         int[] A = {-10, -10, -1, 0, 3, 6};
         int actual = absDistinct.solution(A);
         int expected = 5;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
 }

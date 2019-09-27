@@ -19,7 +19,7 @@ public class CommonPrimeDivisorsTest {
         int[] B = {75, 30, 5};
         int actual = commonPrimeDivisors.solution(A, B);
         int expected = 1;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
 }

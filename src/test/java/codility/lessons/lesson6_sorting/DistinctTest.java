@@ -18,7 +18,7 @@ public class DistinctTest {
         int[] arr = {2, 1, 1, 2, 3, 1};
         int actual = distinct.solution(arr);
         int expected = 3;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -26,7 +26,7 @@ public class DistinctTest {
         int[] arr = {0};
         int actual = distinct.solution(arr);
         int expected = 1;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -34,7 +34,7 @@ public class DistinctTest {
         int[] arr = {};
         int actual = distinct.solution(arr);
         int expected = 0;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
 }

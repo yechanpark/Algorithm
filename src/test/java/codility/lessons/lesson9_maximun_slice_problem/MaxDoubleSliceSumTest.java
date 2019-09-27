@@ -19,7 +19,7 @@ public class MaxDoubleSliceSumTest {
         int[] arr = {3, 2, 6, -1, 4, 5, -1, 2};
         int actual = maxDoubleSliceSum.solution(arr);
         int expected = 17;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
 }

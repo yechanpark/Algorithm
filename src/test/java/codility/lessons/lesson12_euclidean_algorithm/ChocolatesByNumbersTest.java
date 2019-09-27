@@ -19,7 +19,7 @@ public class ChocolatesByNumbersTest {
         int M = 4;
         int actual = chocolatesByNumbers.solution(N, M);
         int expected = 5;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -28,7 +28,7 @@ public class ChocolatesByNumbersTest {
         int M = 2;
         int actual = chocolatesByNumbers.solution(N, M);
         int expected = 1;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
 }

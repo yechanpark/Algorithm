@@ -18,7 +18,7 @@ public class EquiLeaderTest {
         int[] arr = {4, 3, 4, 4, 4, 2};
         int actual = equiLeader.solution(arr);
         int expected = 2;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -26,7 +26,7 @@ public class EquiLeaderTest {
         int[] arr = {1, 2};
         int actual = equiLeader.solution(arr);
         int expected = 0;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -34,7 +34,7 @@ public class EquiLeaderTest {
         int[] arr = {1, 2, 3, 4, 5};
         int actual = equiLeader.solution(arr);
         int expected = 0;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -42,7 +42,7 @@ public class EquiLeaderTest {
         int[] arr = {4, 4, 2, 5, 3, 4, 4, 4};
         int actual = equiLeader.solution(arr);
         int expected = 3;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
 

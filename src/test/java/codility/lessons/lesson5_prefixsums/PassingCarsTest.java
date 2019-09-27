@@ -18,6 +18,6 @@ public class PassingCarsTest {
         int[] arr = {0, 1, 0, 1, 1};
         int actual = passingCars.solution(arr);
         int expected = 5;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 }

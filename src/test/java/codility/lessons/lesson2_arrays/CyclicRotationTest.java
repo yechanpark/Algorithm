@@ -18,7 +18,7 @@ public class CyclicRotationTest {
         int[] arr = {3, 8, 9, 7, 6};
         int[] actual = cyclicRotation.solution(arr, 3);
         int[] expected = {9, 7, 6, 3, 8};
-        assertArrayEquals(actual, expected);
+        assertArrayEquals(expected, actual);
     }
 
     @Test
@@ -26,7 +26,7 @@ public class CyclicRotationTest {
         int[] arr = {0, 0, 0};
         int[] actual = cyclicRotation.solution(arr, 1);
         int[] expected = {0, 0, 0};
-        assertArrayEquals(actual, expected);
+        assertArrayEquals(expected, actual);
     }
 
     @Test
@@ -34,6 +34,6 @@ public class CyclicRotationTest {
         int[] arr = {1, 2, 3, 4};
         int[] actual = cyclicRotation.solution(arr, 4);
         int[] expected = {1, 2, 3, 4};
-        assertArrayEquals(actual, expected);
+        assertArrayEquals(expected, actual);
     }
 }

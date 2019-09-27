@@ -19,7 +19,7 @@ public class CountDistinctSlicesTest {
         int[] A = {3, 4, 5, 5, 2};
         int actual = countDistinctSlices.solution(M, A);
         int expected = 9;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
 }

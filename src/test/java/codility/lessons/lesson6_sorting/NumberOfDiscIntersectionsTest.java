@@ -18,7 +18,7 @@ public class NumberOfDiscIntersectionsTest {
         int[] arr = {1, 5, 2, 1, 4, 0};
         int actual = numberOfDiscIntersections.solution(arr);
         int expected = 11;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
 }

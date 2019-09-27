@@ -18,6 +18,6 @@ public class TapeEquilibriumTest {
         int[] arr = {3, 1, 2, 4, 3};
         int actual = tapeEquilibrium.solution(arr);
         int expected = 1;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 }

@@ -19,7 +19,7 @@ public class LadderTest {
         int[] B = {3, 2, 4, 3, 1};
         int[] actual = ladder.solution(A, B);
         int[] expected = {5, 1, 8, 0, 1};
-        assertArrayEquals(actual, expected);
+        assertArrayEquals(expected, actual);
     }
 
 }
