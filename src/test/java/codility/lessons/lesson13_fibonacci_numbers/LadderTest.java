@@ -1,14 +1,14 @@
 package codility.lessons.lesson13_fibonacci_numbers;
 
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.testng.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class LadderTest {
     private Ladder ladder;
 
-    @BeforeClass
+    @BeforeEach
     public void init() {
         this.ladder = new Ladder();
     }
@@ -19,7 +19,7 @@ public class LadderTest {
         int[] B = {3, 2, 4, 3, 1};
         int[] actual = ladder.solution(A, B);
         int[] expected = {5, 1, 8, 0, 1};
-        assertEquals(actual, expected);
+        assertArrayEquals(actual, expected);
     }
 
 }

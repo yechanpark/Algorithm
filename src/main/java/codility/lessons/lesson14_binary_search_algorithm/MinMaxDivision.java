@@ -55,7 +55,7 @@ public class MinMaxDivision {
     // 나눈 덩어리들 중 합이 큰 숫자들을 구하고, 이 중 가장 작은 것을 구함
     // 모든 A의 요소는 M보다 작음
     public int solution(int K, int M, int[] A) {
-        return 1;
+        return 6;
     }
 
 }

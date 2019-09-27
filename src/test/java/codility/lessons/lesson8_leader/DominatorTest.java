@@ -1,17 +1,18 @@
 package codility.lessons.lesson8_leader;
 
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.testng.AssertJUnit.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 
 public class DominatorTest {
     private Dominator dominator;
 
-    @BeforeClass
+    @BeforeEach
     public void init() {
         this.dominator = new Dominator();
     }

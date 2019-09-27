@@ -1,14 +1,14 @@
 package codility.lessons.lesson2_arrays;
 
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.testng.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class CyclicRotationTest {
     private CyclicRotation cyclicRotation;
 
-    @BeforeClass
+    @BeforeEach
     public void init() {
         this.cyclicRotation = new CyclicRotation();
     }
@@ -18,7 +18,7 @@ public class CyclicRotationTest {
         int[] arr = {3, 8, 9, 7, 6};
         int[] actual = cyclicRotation.solution(arr, 3);
         int[] expected = {9, 7, 6, 3, 8};
-        assertEquals(actual, expected);
+        assertArrayEquals(actual, expected);
     }
 
     @Test
@@ -26,7 +26,7 @@ public class CyclicRotationTest {
         int[] arr = {0, 0, 0};
         int[] actual = cyclicRotation.solution(arr, 1);
         int[] expected = {0, 0, 0};
-        assertEquals(actual, expected);
+        assertArrayEquals(actual, expected);
     }
 
     @Test
@@ -34,6 +34,6 @@ public class CyclicRotationTest {
         int[] arr = {1, 2, 3, 4};
         int[] actual = cyclicRotation.solution(arr, 4);
         int[] expected = {1, 2, 3, 4};
-        assertEquals(actual, expected);
+        assertArrayEquals(actual, expected);
     }
 }

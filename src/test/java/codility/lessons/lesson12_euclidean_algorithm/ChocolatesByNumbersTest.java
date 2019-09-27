@@ -1,14 +1,14 @@
 package codility.lessons.lesson12_euclidean_algorithm;
 
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.testng.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ChocolatesByNumbersTest {
     private ChocolatesByNumbers chocolatesByNumbers;
 
-    @BeforeClass
+    @BeforeEach
     public void init() {
         this.chocolatesByNumbers = new ChocolatesByNumbers();
     }

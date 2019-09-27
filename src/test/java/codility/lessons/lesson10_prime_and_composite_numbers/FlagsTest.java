@@ -1,14 +1,14 @@
 package codility.lessons.lesson10_prime_and_composite_numbers;
 
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.testng.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FlagsTest {
     private Flags flags;
 
-    @BeforeClass
+    @BeforeEach
     public void init() {
         this.flags = new Flags();
     }

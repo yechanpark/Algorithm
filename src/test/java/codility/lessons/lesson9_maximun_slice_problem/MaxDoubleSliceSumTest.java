@@ -1,15 +1,15 @@
 package codility.lessons.lesson9_maximun_slice_problem;
 
 import codility.lessons.lesson9_maximum_slice_problem.MaxDoubleSliceSum;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.testng.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MaxDoubleSliceSumTest {
     private MaxDoubleSliceSum maxDoubleSliceSum;
 
-    @BeforeClass
+    @BeforeEach
     public void init() {
         this.maxDoubleSliceSum = new MaxDoubleSliceSum();
     }

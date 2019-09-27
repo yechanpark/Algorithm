@@ -1,14 +1,14 @@
 package codility.lessons.lesson5_prefixsums;
 
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.testng.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class PassingCarsTest {
     private PassingCars passingCars;
 
-    @BeforeClass
+    @BeforeEach
     public void init() {
         this.passingCars = new PassingCars();
     }

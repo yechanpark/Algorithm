@@ -1,14 +1,14 @@
 package codility.lessons.lesson11_sieve_of_eratosthenes;
 
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.testng.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class CountSemiprimesTest {
     private CountSemiprimes countSemiprimes;
 
-    @BeforeClass
+    @BeforeEach
     public void init() {
         this.countSemiprimes = new CountSemiprimes();
     }
@@ -20,7 +20,7 @@ public class CountSemiprimesTest {
         int[] Q = {26, 10, 20};
         int[] actual = countSemiprimes.solution(N, P, Q);
         int[] expected = {10, 4, 0};
-        assertEquals(actual, expected);
+        assertArrayEquals(actual, expected);
     }
 
 }

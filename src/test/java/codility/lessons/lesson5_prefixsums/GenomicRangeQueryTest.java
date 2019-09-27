@@ -1,14 +1,14 @@
 package codility.lessons.lesson5_prefixsums;
 
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.testng.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class GenomicRangeQueryTest {
     private GenomicRangeQuery genomicRangeQuery;
 
-    @BeforeClass
+    @BeforeEach
     public void init() {
         this.genomicRangeQuery = new GenomicRangeQuery();
     }
@@ -22,7 +22,7 @@ public class GenomicRangeQueryTest {
         int[] actual = genomicRangeQuery.solution(S, P, Q);
         int[] expected = {2, 4, 1};
 
-        assertEquals(actual, expected);
+        assertArrayEquals(actual, expected);
     }
 
     @Test
@@ -34,7 +34,7 @@ public class GenomicRangeQueryTest {
         int[] actual = genomicRangeQuery.solution(S, P, Q);
         int[] expected = {2, 2, 2};
 
-        assertEquals(actual, expected);
+        assertArrayEquals(actual, expected);
     }
 
     @Test
@@ -46,6 +46,6 @@ public class GenomicRangeQueryTest {
         int[] actual = genomicRangeQuery.solution(S, P, Q);
         int[] expected = {1, 1, 1};
 
-        assertEquals(actual, expected);
+        assertArrayEquals(actual, expected);
     }
 }
