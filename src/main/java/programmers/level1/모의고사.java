@@ -39,35 +39,35 @@ public class 모의고사 {
                 {2, 1, 2, 3, 2, 4, 2, 5},
                 {3, 3, 1, 1, 2, 2, 4, 4, 5, 5}
         };
-        int[] results = new int[3];
+        int[] correctAnswerCount = new int[3];
         int[] supojaIndex = new int[3];
 
         int aswersLength = answers.length;
         int supojaLength = supoja.length;
 
+        // 채점
         for (int i = 0; i < aswersLength; i++) {
             int answer = answers[i];
+            // 각 수포자들이 찍은 답을 채점
             for (int j = 0; j < supojaLength; j++) {
                 supojaIndex[j] = i % supoja[j].length;
-                // 정답인 경우
+                // 정답인 경우 각 수포자 인덱스에 맞춘 갯수를 더함
                 if (answer == supoja[j][supojaIndex[j]]) {
-                    results[j]++;
+                    correctAnswerCount[j]++;
                 }
             }
         }
 
-        // 정답의 최대 수치
-        int max = Arrays.stream(results).max().getAsInt();
+        // 각 수포자들의 정답 갯수 배열 중 최대값 (가장 많이 받은 점수)
+        int max = Arrays.stream(correctAnswerCount).max().getAsInt();
         int resultCount = 0;
-        if (results[0] >= max) resultCount++;
-        if (results[1] >= max) resultCount++;
-        if (results[2] >= max) resultCount++;
+        for (int i = 0; i < supojaLength; i++)
+            if (correctAnswerCount[i] >= max) resultCount++;
 
         int[] answer = new int[resultCount];
         int resultIndex = 0;
-        if (results[0] >= max) answer[resultIndex++] = 1;
-        if (results[1] >= max) answer[resultIndex++] = 2;
-        if (results[2] >= max) answer[resultIndex]   = 3;
+        for (int i = 0; i < supojaLength; i++)
+            if (correctAnswerCount[i] >= max) answer[resultIndex++] = i + 1;
 
         Arrays.sort(answer);
         return answer;
