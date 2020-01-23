@@ -1,4 +1,4 @@
-package leetcode.TwoSum;
+package leetcode.easy.TwoSum;
 
 import leetcode.easy.twosum.TwoSum;
 import org.junit.jupiter.api.BeforeEach;
