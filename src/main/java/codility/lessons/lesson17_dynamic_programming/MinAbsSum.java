@@ -1,8 +1,5 @@
 package codility.lessons.lesson17_dynamic_programming;
 
-import java.util.Arrays;
-import java.util.Comparator;
-
 /**
  * For a given array A of N integers and a sequence S of N integers from the set {−1, 1}, we define val(A, S) as follows:
  * <p>
