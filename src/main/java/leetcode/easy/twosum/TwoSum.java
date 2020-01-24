@@ -18,12 +18,8 @@ import java.util.Map;
 
 public class TwoSum {
     public int[] solution(int[] nums, int target) {
-        // Key - nums에 있는 값, Value - 해당 값의 인덱스
         Map<Integer, Integer> map = new HashMap<>();
-
-        // 초기값 세팅
         map.put(nums[0], 0);
-
         int numsLength = nums.length;
         int[] result = new int[2];
         for (int i = 1; i < numsLength; i++) {
@@ -32,7 +28,7 @@ public class TwoSum {
             int key = target - nums[i];
 
             // 맵에 포함하고 있는 숫자인 경우 리턴
-            if (map.containsKey(key)) {
+            if ( map.containsKey(key) ) {
                 result[0] = map.get(key);
                 result[1] = i;
                 return result;
