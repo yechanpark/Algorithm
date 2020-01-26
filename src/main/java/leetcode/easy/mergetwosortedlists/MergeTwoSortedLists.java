@@ -1,5 +1,7 @@
 package leetcode.easy.mergetwosortedlists;
 
+import leetcode.common.ListNode;
+
 /**
  * Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.
  * <p>
@@ -57,15 +59,6 @@ public class MergeTwoSortedLists {
         // 임시 노드의 다음 노드에 다시 l1, l2 중 최대값을 연결하도록 재귀호출 (오름차순 정렬)
         tempNode.next = solution(l1, l2);
         return tempNode;
-    }
-}
-
-class ListNode {
-    public int val;
-    public ListNode next;
-
-    public ListNode(int x) {
-        val = x;
     }
 }
 
