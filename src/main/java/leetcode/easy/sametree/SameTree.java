@@ -68,5 +68,5 @@ public class SameTree {
 }
 
 /**
- * 키워드 - 트리, 트리순회
+ * 키워드 - 트리, 트리순회, 깊이 우선 탐색 알고리즘(DFS, Depth First Search)
  */

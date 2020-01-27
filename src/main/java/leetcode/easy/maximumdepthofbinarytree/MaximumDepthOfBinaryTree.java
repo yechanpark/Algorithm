@@ -50,5 +50,5 @@ public class MaximumDepthOfBinaryTree {
 }
 
 /**
- * 키워드 - 트리, 트리깊이, 이진트리
+ * 키워드 - 트리, 트리깊이, 이진트리, 깊이 우선 탐색 알고리즘 (DFS, Depth First Search)
  */
