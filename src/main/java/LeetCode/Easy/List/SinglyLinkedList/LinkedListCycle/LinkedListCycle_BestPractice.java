@@ -1,6 +1,6 @@
-package LeetCode.Easy.List.LinkedListCycle;
+package LeetCode.Easy.List.SinglyLinkedList.LinkedListCycle;
 
-import LeetCode.Easy.List.SinglyLinkedListNode;
+import LeetCode.Easy.List.SinglyLinkedList.SinglyLinkedListNode;
 
 /**
  * Use two pointers, walker and runner.

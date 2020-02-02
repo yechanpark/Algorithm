@@ -1,12 +1,12 @@
-package LeetCode.Easy.List.MergeTwoSortedLists;
+package LeetCode.Easy.List.LinkedList.MergeTwoSortedLists;
 
-import LeetCode.Easy.List.ListNode;
+import LeetCode.Easy.List.LinkedList.LinkedListNode;
 
 /**
  *
  */
 public class MergeTwoSortedLists_BestPractice {
-    public ListNode solution(ListNode l1, ListNode l2) {
+    public LinkedListNode solution(LinkedListNode l1, LinkedListNode l2) {
         if (l1 == null) return l2;
         if (l2 == null) return l1;
 

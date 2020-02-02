@@ -1,6 +1,6 @@
-package LeetCode.Easy.List.MergeTwoSortedLists;
+package LeetCode.Easy.List.LinkedList.MergeTwoSortedLists;
 
-import LeetCode.Easy.List.ListNode;
+import LeetCode.Easy.List.LinkedList.LinkedListNode;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -14,25 +14,25 @@ public class MergeTwoSortedListsTest {
 
     @Test
     public void sample1Test() {
-        ListNode l1 = new ListNode(1);
-        ListNode l12 = new ListNode(2);
-        ListNode l13 = new ListNode(4);
+        LinkedListNode l1 = new LinkedListNode(1);
+        LinkedListNode l12 = new LinkedListNode(2);
+        LinkedListNode l13 = new LinkedListNode(4);
         l1.next = l12;
         l12.next = l13;
 
-        ListNode l2 = new ListNode(1);
-        ListNode l22 = new ListNode(3);
-        ListNode l23 = new ListNode(4);
+        LinkedListNode l2 = new LinkedListNode(1);
+        LinkedListNode l22 = new LinkedListNode(3);
+        LinkedListNode l23 = new LinkedListNode(4);
         l2.next = l22;
         l22.next = l23;
 
-        ListNode actual = mergeTwoSortedLists.solution(l1, l2);
-        ListNode expected = new ListNode(1);
-        ListNode expected2 = new ListNode(1);
-        ListNode expected3 = new ListNode(2);
-        ListNode expected4 = new ListNode(3);
-        ListNode expected5 = new ListNode(4);
-        ListNode expected6 = new ListNode(5);
+        LinkedListNode actual = mergeTwoSortedLists.solution(l1, l2);
+        LinkedListNode expected = new LinkedListNode(1);
+        LinkedListNode expected2 = new LinkedListNode(1);
+        LinkedListNode expected3 = new LinkedListNode(2);
+        LinkedListNode expected4 = new LinkedListNode(3);
+        LinkedListNode expected5 = new LinkedListNode(4);
+        LinkedListNode expected6 = new LinkedListNode(5);
         expected.next = expected2;
         expected2.next = expected3;
         expected3.next = expected4;

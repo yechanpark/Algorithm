@@ -1,6 +1,6 @@
-package LeetCode.Easy.List.RemoveDuplicatesFromSortedList;
+package LeetCode.Easy.List.LinkedList.RemoveDuplicatesFromSortedList;
 
-import LeetCode.Easy.List.ListNode;
+import LeetCode.Easy.List.LinkedList.LinkedListNode;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -14,15 +14,15 @@ public class RemoveDuplicatesFromSortedListTest {
 
     @Test
     public void sample1Test() {
-        ListNode l1 = new ListNode(1);
-        ListNode l12 = new ListNode(1);
-        ListNode l13 = new ListNode(2);
+        LinkedListNode l1 = new LinkedListNode(1);
+        LinkedListNode l12 = new LinkedListNode(1);
+        LinkedListNode l13 = new LinkedListNode(2);
         l1.next = l12;
         l12.next = l13;
 
-        ListNode actual = removeDuplicatesFromSortedList.solution(l1);
-        ListNode expected = new ListNode(1);
-        expected.next = new ListNode(2);
+        LinkedListNode actual = removeDuplicatesFromSortedList.solution(l1);
+        LinkedListNode expected = new LinkedListNode(1);
+        expected.next = new LinkedListNode(2);
 
         boolean result = true;
         while (expected.next != null) {
@@ -36,20 +36,20 @@ public class RemoveDuplicatesFromSortedListTest {
 
     @Test
     public void sample2Test() {
-        ListNode l1 = new ListNode(1);
-        ListNode l12 = new ListNode(1);
-        ListNode l13 = new ListNode(2);
-        ListNode l14 = new ListNode(3);
-        ListNode l15 = new ListNode(3);
+        LinkedListNode l1 = new LinkedListNode(1);
+        LinkedListNode l12 = new LinkedListNode(1);
+        LinkedListNode l13 = new LinkedListNode(2);
+        LinkedListNode l14 = new LinkedListNode(3);
+        LinkedListNode l15 = new LinkedListNode(3);
         l1.next = l12;
         l12.next = l13;
         l13.next = l14;
         l14.next = l15;
 
-        ListNode actual = removeDuplicatesFromSortedList.solution(l1);
-        ListNode expected = new ListNode(1);
-        ListNode expected2 = new ListNode(2);
-        ListNode expected3 = new ListNode(3);
+        LinkedListNode actual = removeDuplicatesFromSortedList.solution(l1);
+        LinkedListNode expected = new LinkedListNode(1);
+        LinkedListNode expected2 = new LinkedListNode(2);
+        LinkedListNode expected3 = new LinkedListNode(3);
         expected.next = expected2;
         expected2.next = expected3;
 
@@ -66,7 +66,7 @@ public class RemoveDuplicatesFromSortedListTest {
     @Test
     public void sample3Test() {
 
-        ListNode actual = removeDuplicatesFromSortedList.solution(null);
+        LinkedListNode actual = removeDuplicatesFromSortedList.solution(null);
 
         boolean result = true;
         if (actual != null) {
@@ -77,14 +77,14 @@ public class RemoveDuplicatesFromSortedListTest {
 
     @Test
     public void sample4Test() {
-        ListNode l1 = new ListNode(1);
-        ListNode l12 = new ListNode(1);
-        ListNode l13 = new ListNode(1);
+        LinkedListNode l1 = new LinkedListNode(1);
+        LinkedListNode l12 = new LinkedListNode(1);
+        LinkedListNode l13 = new LinkedListNode(1);
         l1.next = l12;
         l12.next = l13;
 
-        ListNode actual = removeDuplicatesFromSortedList.solution(l1);
-        ListNode expected = new ListNode(1);
+        LinkedListNode actual = removeDuplicatesFromSortedList.solution(l1);
+        LinkedListNode expected = new LinkedListNode(1);
 
         if (actual.next != null)
             assert (false);

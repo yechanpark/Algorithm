@@ -1,6 +1,6 @@
-package LeetCode.Easy.List.RemoveDuplicatesFromSortedList;
+package LeetCode.Easy.List.LinkedList.RemoveDuplicatesFromSortedList;
 
-import LeetCode.Easy.List.ListNode;
+import LeetCode.Easy.List.LinkedList.LinkedListNode;
 
 /**
  * Given a sorted linked list, delete all duplicates such that each element appear only once.
@@ -23,7 +23,7 @@ import LeetCode.Easy.List.ListNode;
  */
 
 public class RemoveDuplicatesFromSortedList {
-    public ListNode solution(ListNode head) {
+    public LinkedListNode solution(LinkedListNode head) {
 
         // 현재 검사하는 노드가 null인 경우 null 리턴
         if (head == null) return null;

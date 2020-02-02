@@ -1,6 +1,6 @@
-package LeetCode.Easy.List.MergeTwoSortedLists;
+package LeetCode.Easy.List.LinkedList.MergeTwoSortedLists;
 
-import LeetCode.Easy.List.ListNode;
+import LeetCode.Easy.List.LinkedList.LinkedListNode;
 
 /**
  * Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.
@@ -19,10 +19,10 @@ import LeetCode.Easy.List.ListNode;
  */
 
 public class MergeTwoSortedLists {
-    public ListNode solution(ListNode l1, ListNode l2) {
+    public LinkedListNode solution(LinkedListNode l1, LinkedListNode l2) {
         // 임시로 사용될 노드, 현재 l2, l2의 값 중 가장 작은 노드를 가리킴
         // 리턴 시 이 노드는 상위 메서드의 next 노드가 됨. (상위 result 노드보다 더 큰 값)
-        ListNode tempNode;
+        LinkedListNode tempNode;
 
         // 둘 다 끝이면 null 리턴
         if (l1 == null && l2 == null)

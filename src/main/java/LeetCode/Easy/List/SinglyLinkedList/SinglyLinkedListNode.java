@@ -1,4 +1,4 @@
-package LeetCode.Easy.List;
+package LeetCode.Easy.List.SinglyLinkedList;
 
 public class SinglyLinkedListNode {
     public int val;

@@ -1,13 +1,13 @@
-package LeetCode.Easy.List.RemoveDuplicatesFromSortedList;
+package LeetCode.Easy.List.LinkedList.RemoveDuplicatesFromSortedList;
 
-import LeetCode.Easy.List.ListNode;
+import LeetCode.Easy.List.LinkedList.LinkedListNode;
 
 /**
  *
  */
 public class RemoveDuplicatesFromSortedList_BestPractice {
-    public ListNode solution(ListNode head) {
-        ListNode cur = head;
+    public LinkedListNode solution(LinkedListNode head) {
+        LinkedListNode cur = head;
         while (cur != null) {
             while ((cur.next != null) && (cur.val == cur.next.val)) {
                 cur.next = cur.next.next;
