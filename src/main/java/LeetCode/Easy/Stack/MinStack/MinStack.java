@@ -64,5 +64,5 @@ public class MinStack {
 }
 
 /**
- * 키워드 - 스택, 최소스택(Min Stack)
+ * 키워드 - 스택, 최소스택(Min Stack), 중간저장
  */
