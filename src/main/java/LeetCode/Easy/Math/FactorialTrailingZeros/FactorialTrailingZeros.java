@@ -17,18 +17,7 @@ package LeetCode.Easy.Math.FactorialTrailingZeros;
  */
 public class FactorialTrailingZeros {
     public int solution(int n) {
-
-        int result = 0; // 결과가 포함하는 0의 갯수
-        int multiply = 2;
-        for (int i = multiply + 1; i <= n; i++) {
-            multiply *= i;
-        }
-        while(multiply < 10) {
-            if (multiply % 10 == 0) result++;
-
-            multiply /= 10;
-        }
-        return result;
+        return 1;
     }
 }
 
