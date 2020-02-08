@@ -1,4 +1,4 @@
-package LeetCode.Easy.String.ReverseBits;
+package LeetCode.Easy.Bit.ReverseBits;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

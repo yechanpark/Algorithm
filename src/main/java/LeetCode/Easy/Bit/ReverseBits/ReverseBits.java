@@ -1,4 +1,4 @@
-package LeetCode.Easy.String.ReverseBits;
+package LeetCode.Easy.Bit.ReverseBits;
 
 /**
  * Reverse bits of a given 32 bits unsigned integer.

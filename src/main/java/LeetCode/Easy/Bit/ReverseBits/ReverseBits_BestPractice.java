@@ -1,4 +1,4 @@
-package LeetCode.Easy.String.ReverseBits;
+package LeetCode.Easy.Bit.ReverseBits;
 
 /**
  *
