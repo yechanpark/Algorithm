@@ -30,10 +30,10 @@ package LeetCode.Easy.String.ReverseBits;
 public class ReverseBits {
     // you need treat n as an unsigned value
     public int solution(int n) {
-        return Integer.reverse(n);
+        return 1;
     }
 }
 
 /**
- * 키워드 - Bit 뒤집기, int 뒤집기, 진수 변환
+ * 키워드 - Integer.reverse()
  */
