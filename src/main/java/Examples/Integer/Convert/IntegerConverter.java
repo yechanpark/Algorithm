@@ -82,4 +82,14 @@ public class IntegerConverter {
         return characterList;
     }
 
+    /**
+     * int to Reversed int
+     * 인자로 제공된 int 값의 바이너리 표현에 대한 비트 순서를 반대로 뒤집은 값을 리턴.
+     * intput : 43261596 (00000010100101000001111010011100)
+     * output : 964176192 (00111001011110000010100101000000)
+     */
+    public int integerToReverseInteger(int integer) {
+        return Integer.reverse(integer);
+    }
+
 }
