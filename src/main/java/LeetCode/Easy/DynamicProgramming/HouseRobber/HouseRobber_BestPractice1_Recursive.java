@@ -1,6 +1,8 @@
 package LeetCode.Easy.DynamicProgramming.HouseRobber;
 
 /**
+ * 공식키워드 - Dynamic Programming
+ *
  * This particular problem and most of others can be approached using the following sequence:
  * <p>
  * 1. Find recursive relation

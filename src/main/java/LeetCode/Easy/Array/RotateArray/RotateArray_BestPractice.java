@@ -1,6 +1,8 @@
 package LeetCode.Easy.Array.RotateArray;
 
 /**
+ * 공식키워드 - Array
+ *
  * 문제에서 O(1) extra space 만큼을 활용하라고 했으므로 이 방법이 더 적절.
  */
 public class RotateArray_BestPractice {

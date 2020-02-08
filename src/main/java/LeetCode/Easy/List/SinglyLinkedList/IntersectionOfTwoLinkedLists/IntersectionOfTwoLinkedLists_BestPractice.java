@@ -3,7 +3,9 @@ package LeetCode.Easy.List.SinglyLinkedList.IntersectionOfTwoLinkedLists;
 import LeetCode.Easy.List.SinglyLinkedList.SinglyLinkedListNode;
 
 /**
- *most solutions here preprocess linkedlists to get the difference in len.
+ * 공식키워드 - Linked List
+ *
+ * most solutions here preprocess linkedlists to get the difference in len.
  * Actually we don't care about the "value" of difference, we just want to make sure two pointers reach the intersection node at the same time.
  *
  * We can use two iterations to do that.

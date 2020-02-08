@@ -1,7 +1,7 @@
 package LeetCode.Easy.Array.PlusOne;
 
 /**
- *
+ * 공식키워드 - Array
  */
 public class PlusOne_BestPractice {
     public int[] solution(int[] digits) {

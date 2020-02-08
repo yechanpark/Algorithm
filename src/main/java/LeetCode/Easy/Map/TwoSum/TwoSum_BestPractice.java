@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- *
+ * 공식키워드 - 공식키워드 - Array, HashTable
  */
 public class TwoSum_BestPractice {
     public int[] solution(int[] nums, int target) {

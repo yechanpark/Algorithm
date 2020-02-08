@@ -3,7 +3,7 @@ package LeetCode.Easy.Stack.ValidParentheses;
 import java.util.Stack;
 
 /**
- *
+ * 공식키워드 - String, Stack
  */
 
 public class ValidParentheses_BestPractice {

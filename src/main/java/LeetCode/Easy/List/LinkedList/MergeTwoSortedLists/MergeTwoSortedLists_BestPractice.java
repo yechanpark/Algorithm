@@ -3,7 +3,7 @@ package LeetCode.Easy.List.LinkedList.MergeTwoSortedLists;
 import LeetCode.Easy.List.LinkedList.LinkedListNode;
 
 /**
- *
+ * 공식키워드 - Linked List
  */
 public class MergeTwoSortedLists_BestPractice {
     public LinkedListNode solution(LinkedListNode l1, LinkedListNode l2) {

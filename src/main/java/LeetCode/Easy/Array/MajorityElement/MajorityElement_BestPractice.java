@@ -1,7 +1,7 @@
 package LeetCode.Easy.Array.MajorityElement;
 
 /**
- *
+ * 공식키워드 - Array, Divide And Conquer, Bit Manipulation
  */
 public class MajorityElement_BestPractice {
     public int solution(int[] nums) {

@@ -1,7 +1,7 @@
 package LeetCode.Easy.Array.BestTimeToBuyAndSellStockII;
 
 /**
- *
+ * 공식키워드 - Array, Greedy
  */
 public class BestTimeToBuyAndSellStockII_BestPractice {
     public int solution(int[] prices) {

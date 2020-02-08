@@ -3,24 +3,8 @@ package LeetCode.Easy.Tree.MinimumDepthOfBinaryTree;
 import LeetCode.Easy.Tree.TreeNode;
 
 /**
- * Given a binary tree, find its minimum depth.
- *
- * The minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node.
- *
- * Note: A leaf is a node with no children.
- *
- * Example:
- *
- * Given binary tree [3,9,20,null,null,15,7],
- *
- *     3
- *    / \
- *   9  20
- *     /  \
- *    15   7
- * return its minimum depth = 2.
+ * 공식키워드 - Tree, Depth First Search, Breadth First Search
  */
-
 public class MinimumDepthOfBinaryTree_BestPractice {
     public int solution(TreeNode root) {
         // 현재 검사하는 노드가 null이면 0 리턴
@@ -44,7 +28,3 @@ public class MinimumDepthOfBinaryTree_BestPractice {
 
     }
 }
-
-/**
- * 키워드 - 트리, 트리깊이, 이진트리, 깊이 우선 탐색 알고리즘 (DFS, Depth First Search)
- */

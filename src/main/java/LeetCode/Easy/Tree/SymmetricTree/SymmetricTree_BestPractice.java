@@ -3,7 +3,7 @@ package LeetCode.Easy.Tree.SymmetricTree;
 import LeetCode.Easy.Tree.TreeNode;
 
 /**
- *
+ * 공식키워드 - Tree, Depth First Search, Breadth First Search
  */
 public class SymmetricTree_BestPractice {
 

@@ -1,7 +1,7 @@
 package LeetCode.Easy.Math.PalindromeNumber;
 
 /**
- *
+ * 공식키워드 - Math
  */
 public class PalindromeNumber_BestPractice {
     public boolean solution(int x) {

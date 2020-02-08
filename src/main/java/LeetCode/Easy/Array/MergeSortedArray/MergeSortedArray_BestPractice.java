@@ -1,7 +1,7 @@
 package LeetCode.Easy.Array.MergeSortedArray;
 
 /**
- *
+ * 공식키워드 - Array, Two Pointers
  */
 public class MergeSortedArray_BestPractice {
     public void solution(int[] nums1, int m, int[] nums2, int n) {

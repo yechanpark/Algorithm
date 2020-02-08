@@ -1,7 +1,7 @@
 package LeetCode.Easy.Math.ExcelSheetColumnNumber;
 
 /**
- *
+ * 공식키워드 - Math
  */
 public class ExcelSheetColumnNumber_BestPractice {
     public int solution(String s) {

@@ -1,7 +1,7 @@
 package LeetCode.Easy.Array.SearchInsertPosition;
 
 /**
- *
+ * 공식키워드 - Array, Binary Search
  */
 public class SearchInsertPosition_BestPractice {
     public int solution(int[] nums, int target) {

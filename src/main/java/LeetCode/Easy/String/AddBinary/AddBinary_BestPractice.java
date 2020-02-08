@@ -1,7 +1,7 @@
 package LeetCode.Easy.String.AddBinary;
 
 /**
- *
+ * 공식키워드 - Math, String
  */
 public class AddBinary_BestPractice {
     public String solution(String a, String b) {

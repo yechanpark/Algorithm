@@ -1,7 +1,7 @@
 package LeetCode.Easy.Array.RemoveElement;
 
 /**
- *
+ * 공식키워드 - Array, Two Pointers
  */
 public class RemoveElement_BestPractice {
     public int solution(int[] nums, int val) {

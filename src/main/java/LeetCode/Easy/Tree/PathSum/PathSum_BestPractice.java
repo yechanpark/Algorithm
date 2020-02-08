@@ -3,7 +3,7 @@ package LeetCode.Easy.Tree.PathSum;
 import LeetCode.Easy.Tree.TreeNode;
 
 /**
- *
+ * 공식키워드 - Tree, Depth First Search
  */
 public class PathSum_BestPractice {
     public boolean solution(TreeNode root, int sum) {

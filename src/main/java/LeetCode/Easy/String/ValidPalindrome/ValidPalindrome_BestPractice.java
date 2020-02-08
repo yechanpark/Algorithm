@@ -1,7 +1,7 @@
 package LeetCode.Easy.String.ValidPalindrome;
 
 /**
- *
+ * 공식키워드 - String, Two Pointers
  */
 public class ValidPalindrome_BestPractice {
     public boolean solution(String s) {

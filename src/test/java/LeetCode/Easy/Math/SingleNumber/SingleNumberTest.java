@@ -1,6 +1,6 @@
 package LeetCode.Easy.Math.SingleNumber;
 
-import LeetCode.Easy.Array.SingleNumber.SingleNumber;
+import LeetCode.Easy.BitManipulation.SingleNumber.SingleNumber;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

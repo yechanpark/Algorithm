@@ -3,6 +3,8 @@ package LeetCode.Easy.List.SinglyLinkedList.LinkedListCycle;
 import LeetCode.Easy.List.SinglyLinkedList.SinglyLinkedListNode;
 
 /**
+ * 공식키워드 - Linked List, Two Pointers
+ *
  * Use two pointers, walker and runner.
  * walker moves step by step. runner moves two steps at time.
  * if the Linked List has a cycle walker and runner will meet at some point.

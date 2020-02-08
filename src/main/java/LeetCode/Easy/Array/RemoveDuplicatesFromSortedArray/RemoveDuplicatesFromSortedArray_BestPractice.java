@@ -1,6 +1,8 @@
 package LeetCode.Easy.Array.RemoveDuplicatesFromSortedArray;
 
 /**
+ * 공식키워드 - Array, Two Pointers
+ *
  * pos is index of answer partition. Move different numbers to the answer partition of list:
  */
 

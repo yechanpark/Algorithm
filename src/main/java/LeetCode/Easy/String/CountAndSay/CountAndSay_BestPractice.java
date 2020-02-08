@@ -1,7 +1,7 @@
 package LeetCode.Easy.String.CountAndSay;
 
 /**
- *
+ * 공식키워드 - String
  */
 public class CountAndSay_BestPractice {
     public String solution(int n) {

@@ -1,6 +1,8 @@
 package LeetCode.Easy.Array.MaximumSubarray;
 
 /**
+ * 공식키워드 - Array, Divide And Conquer, Dynamic Programming
+ *
  * Analysis of this problem:
  * Apparently, this is a optimization problem, which can be usually solved by DP. So when it comes to DP, the first thing for us to figure out is the format of the sub problem(or the state of each sub problem). The format of the sub problem can be helpful when we are trying to come up with the recursive relation.
  *

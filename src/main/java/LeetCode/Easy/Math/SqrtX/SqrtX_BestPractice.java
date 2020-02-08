@@ -1,6 +1,8 @@
 package LeetCode.Easy.Math.SqrtX;
 
 /**
+ * 공식키워드 - Math, Binary Search
+ *
  * The sequence 1, 2, ... , n has no duplication.
  *
  * Near the very end, closest step, before while loop, left = mid = right.

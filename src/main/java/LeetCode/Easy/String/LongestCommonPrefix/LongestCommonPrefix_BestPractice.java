@@ -1,7 +1,7 @@
 package LeetCode.Easy.String.LongestCommonPrefix;
 
 /**
- *
+ * 공식키워드 - String
  */
 public class LongestCommonPrefix_BestPractice {
     public String solution(String[] strs) {

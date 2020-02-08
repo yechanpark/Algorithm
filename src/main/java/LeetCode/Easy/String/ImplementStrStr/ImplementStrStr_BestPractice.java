@@ -1,7 +1,7 @@
 package LeetCode.Easy.String.ImplementStrStr;
 
 /**
- *
+ * 공식키워드 - String, Two Pointers
  */
 public class ImplementStrStr_BestPractice {
     public int solution(String haystack, String needle) {
