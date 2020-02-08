@@ -1,10 +1,10 @@
-package LeetCode.Easy.Regularity.PascalsTriangleII;
+package LeetCode.Easy.Array.PascalsTriangleII;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 공식키워드 - Tree, Depth First Search, Breadth First Search
+ * 공식키워드 - Array
  */
 public class PascalsTriangleII_BestPractice {
     public List<Integer> solution(int rowIndex) {

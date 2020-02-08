@@ -1,4 +1,4 @@
-package LeetCode.Easy.Regularity.PascalsTriangle;
+package LeetCode.Easy.Array.PascalsTriangle;
 
 import java.util.ArrayList;
 import java.util.List;
