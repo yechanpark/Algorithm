@@ -92,4 +92,10 @@ public class IntegerConverter {
         return Integer.reverse(integer);
     }
 
+    /**
+     * int to bit String
+     */
+    public String integerToBinaryString(int integer) {
+        return Integer.toBinaryString(integer);
+    }
 }
