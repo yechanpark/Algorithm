@@ -1,7 +1,7 @@
 package LeetCode.Easy.Math.CountPrimes;
 
 /**
- * 공식키워드 - Math, Prime, Hash Table
+ * 공식키워드 - Math, Prime, Hash Table, Sieve_of_Eratosthenes(에라토스테네스의 체)
  * <p>
  * i = 2 ~ n-1까지 검사할 때, 소수가 아닌것이 확인됐다고 끝내는 것이 아니라,
  * i * j의 결과를 i * j < n 일때 계속해서 j를 더해가며 소수가 아닌 배열에 저장해놓는다.
@@ -12,17 +12,24 @@ package LeetCode.Easy.Math.CountPrimes;
  */
 public class CountPrimes_BestPractice {
     public int solution(int n) {
+        if (n <= 1) return 0;
+
         boolean[] notPrime = new boolean[n];
-        int count = 0;
-        for (int i = 2; i < n; i++) {
+        notPrime[0] = true;
+        notPrime[1] = true;
+
+        for (int i = 2; i < Math.sqrt(n); i++) {
             if (!notPrime[i]) {
-                count++;
-                for (int j = 2; i * j < n; j++) {
+                for (int j = 2; j * i < n; j++) {
                     notPrime[i * j] = true;
                 }
             }
         }
 
+        int count = 0;
+        for (int i = 2; i < notPrime.length; i++) {
+            if (!notPrime[i]) count++;
+        }
         return count;
     }
 }
