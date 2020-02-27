@@ -1,4 +1,4 @@
-package Examples.String.Sequence;
+package JavaAPI.String.Sequence;
 
 /**
  * String을 역순으로 출력

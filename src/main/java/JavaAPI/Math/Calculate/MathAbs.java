@@ -1,4 +1,4 @@
-package Examples.Math.Calculate;
+package JavaAPI.Math.Calculate;
 
 /**
  * 절대값 관련
