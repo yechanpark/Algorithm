@@ -1,4 +1,4 @@
-package Examples.Character.Convert;
+package JavaAPI.Character.Convert;
 
 public class CharacterConverter {
 

@@ -1,4 +1,4 @@
-package Examples.Integer.Convert;
+package JavaAPI.Integer.Convert;
 
 import java.util.ArrayList;
 import java.util.List;

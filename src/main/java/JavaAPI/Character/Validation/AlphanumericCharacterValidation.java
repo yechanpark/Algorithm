@@ -1,4 +1,4 @@
-package Examples.Character.Validation;
+package JavaAPI.Character.Validation;
 
 public class AlphanumericCharacterValidation {
 

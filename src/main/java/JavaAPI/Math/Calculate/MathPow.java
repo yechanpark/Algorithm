@@ -1,4 +1,4 @@
-package Examples.Math.Calculate;
+package JavaAPI.Math.Calculate;
 
 /**
  * 제곱 관련

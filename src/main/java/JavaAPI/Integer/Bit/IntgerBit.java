@@ -1,4 +1,4 @@
-package Examples.Integer.Bit;
+package JavaAPI.Integer.Bit;
 
 public class IntgerBit {
 

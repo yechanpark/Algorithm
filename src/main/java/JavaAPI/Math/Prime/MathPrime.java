@@ -1,4 +1,4 @@
-package Examples.Math.Prime;
+package JavaAPI.Math.Prime;
 
 import java.math.BigInteger;
 import java.util.ArrayList;

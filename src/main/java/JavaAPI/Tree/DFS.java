@@ -1,4 +1,4 @@
-package Examples.Tree;
+package JavaAPI.Tree;
 
 import LeetCode.Easy.Tree.TreeNode;
 
