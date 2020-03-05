@@ -1,4 +1,4 @@
-package Examples.Thread.join;
+package Examples.Thread.sequence.join;
 
 public class CustomThread implements Runnable {
     private int number;
