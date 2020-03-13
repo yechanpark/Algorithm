@@ -56,7 +56,7 @@ package Examples.Sorting.major.MergeSort;
  * <p>
  * 애니메이션
  * <p>
- * <img src="MergeSort.jpg"></img>
+ * <img src="MergeSort_Animation.gif"></img>
  */
 public class MergeSort {
 
