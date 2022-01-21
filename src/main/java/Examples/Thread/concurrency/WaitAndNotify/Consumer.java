@@ -12,7 +12,7 @@ public class Consumer implements Runnable {
     public void run() {
         while (true) {
             Resource resource = sharedResource.getResource();
-            System.out.println(Thread.currentThread().getName() + " consumed Resource : [" + resource.getId() + ", " + resource.getValue() + "]");
+            System.out.println(Thread.currentThread().getName() + " consumed Resource : [" + resource.toString() + ", " + resource.toString() + "]");
             try {
                 Thread.sleep(CONSUMER_THREAD_SLEEP_TIME);
             } catch (InterruptedException e) {

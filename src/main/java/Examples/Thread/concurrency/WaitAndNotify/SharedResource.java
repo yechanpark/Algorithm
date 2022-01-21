@@ -33,7 +33,7 @@ public class SharedResource {
             // 소비가 되어 꽉 차지 않은 경우 리소스 추가
             this.resourceList.add(resource);
             System.out.println(
-                    ConsoleColor.ANSI_GREEN.toString(Thread.currentThread().getName() + " added Resource [" + resource.getId() + ", " + resource.getValue() + "]")
+                    ConsoleColor.ANSI_GREEN.toString(Thread.currentThread().getName() + " added Resource [" + resource.toString() + ", " + resource.toString() + "]")
             );
 
             // 리소스를 추가했으니 Lock을 놓고 다른 스레드에게 알림

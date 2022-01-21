@@ -12,8 +12,8 @@ public class Producer implements Runnable {
     @Override
     public void run() {
         while (true) {
-            Resource resource = new Resource(++resourceSequence, "Val" + resourceSequence);
-            sharedResource.addResource(resource);
+            //Resource resource = new Resource(++resourceSequence, "Val" + resourceSequence);
+            //sharedResource.addResource(resource);
             try {
                 Thread.sleep(PRODUCER_THREAD_SLEEP_TIME);
             } catch (InterruptedException e) {
